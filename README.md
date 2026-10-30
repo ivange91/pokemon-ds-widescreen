@@ -6,33 +6,34 @@ widescreen, 60 fps, up to 4K on a PC and 720p on the Switch.** No more squinting
 
 ![Pokémon DS Widescreen: Black 2, White 2, Black, White, SoulSilver, HeartGold and Platinum in widescreen at 60 fps, on a Nintendo Switch, a PC, a Steam Deck, an Android phone and a Mac](docs/screenshots/trailer-2.gif)
 
-## Downloads
+## Downloads / Descargas EN–ES
 
-| Where you play | Download | Install |
+**Compilación EN/ES de este repositorio:** los siete juegos compatibles en inglés y
+sus variantes españolas verificadas, con pantalla única y vista panorámica.
+No incluye ROMs ni partidas: necesitas tus propios archivos `.nds`.
+
+| Plataforma | Descarga | Instalación |
 |---|---|---|
-| **Windows** PC, and Windows handhelds (ROG Ally, Legion Go, MSI Claw) | [pokemon-ds-wide-pc-windows-x86_64.zip](../../releases/download/pc-v1/pokemon-ds-wide-pc-windows-x86_64.zip) | [PC](#on-a-pc-mac-steam-deck-or-handheld-windows-macos-and-linux) |
-| **Mac** with Apple silicon (M1 and newer) | [pokemon-ds-wide-pc-macos-arm64.zip](../../releases/download/pc-v1/pokemon-ds-wide-pc-macos-arm64.zip) | [Mac](#on-a-pc-mac-steam-deck-or-handheld-windows-macos-and-linux) |
-| **Mac** with an Intel processor | [pokemon-ds-wide-pc-macos-x86_64.zip](../../releases/download/pc-v1/pokemon-ds-wide-pc-macos-x86_64.zip) | [Mac](#on-a-pc-mac-steam-deck-or-handheld-windows-macos-and-linux) |
-| **Linux** and the **Steam Deck** | [pokemon-ds-wide-pc-linux-x86_64.tar.gz](../../releases/download/pc-v1/pokemon-ds-wide-pc-linux-x86_64.tar.gz), or as an [AppImage](../../releases/download/pc-v1/pokemon-ds-wide-pc-linux-x86_64.AppImage) (Gear Lever) | [PC](#on-a-pc-mac-steam-deck-or-handheld-windows-macos-and-linux) |
-| **Android** phone (64-bit, Android 7 or newer) | [pokemon-ds-wide-android.apk](../../releases/download/android-v1/pokemon-ds-wide-android.apk) | [Android](#on-android) |
-| **iPhone** and **iPad** (iOS 14 or newer, sideloaded) | [pokemon-ds-wide-ios.ipa](../../releases/download/ios-v1/pokemon-ds-wide-ios.ipa) | [iPhone](#on-an-iphone-or-ipad) |
-| **Nintendo Switch** (homebrew) | [pokemon-ds-wide-all-switch.zip](../../releases/download/all-games-v2/pokemon-ds-wide-all-switch.zip) | [Switch](#on-the-nintendo-switch) |
+| **Windows x64** | [ZIP portable](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/pokemon-ds-wide-pc-windows-x86_64.zip) | Extraer, poner las ROMs en `roms/` y abrir `Pokemon DS Launcher.exe`. |
+| **Android 7+** (ARM64 / x86_64) | [APK firmada](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/pokemon-ds-wide-android.apk) | Instalar y seleccionar la carpeta con tus ROMs. |
+| **iPhone / iPad, iOS 14+** | [IPA para sideloading](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/pokemon-ds-wide-ios.ipa) | Instalar y firmar con AltStore, SideStore o Sideloadly usando tu cuenta de Apple. |
 
-**All seven games in every download:** Pokémon Black 2, White 2, Black, White, SoulSilver,
-HeartGold and Platinum. Pokémon Omega Ruby is in the works, as its own project. What's new
-in each: [Releases](../../releases).
+[Notas de la versión](https://github.com/ivange91/pokemon-ds-widescreen/releases/tag/en-es-v0.1.0) · [Comprobaciones SHA-256](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/SHA256SUMS.txt) · [Instrucciones](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/LEEME.txt)
 
-One program per platform: start it and pick the game from the list. The
-downloads are free of the games themselves: you bring your own ROMs, and the
-program reads what it needs from them when the game starts.
+**Juegos:** Negro, Blanco, Negro 2, Blanco 2, SoulSilver, HeartGold y Platino.
+Las variantes españolas verificadas son revisión 0. HeartGold español necesita
+la copia ES FIX concreta verificada; SoulSilver español utiliza IPGS, no la
+antigua copia FIX con código IPGJ. Los guardados de ambos idiomas están separados.
 
-## Spanish versions in this branch
+Esta es una compilación de prueba: Windows tiene comprobaciones de arranque y
+escenas iniciales. APK e IPA están compiladas y verificadas, pero falta probar
+las partidas en dispositivos reales. No se ha validado una partida completa;
+la restauración de estados instantáneos de SoulSilver sigue pendiente de revisión.
 
-The local build also recognises Spanish Black, White, Black 2, White 2 and
-SoulSilver (revision 0), alongside Spanish Platinum. HeartGold currently
-supports the specifically verified Spanish FIX copy; other Spanish HeartGold
-dumps have not been mapped. The old SoulSilver FIX copy is not supported.
-These additions are not yet included in the release downloads linked above.
+Para **macOS, Linux/Steam Deck y Nintendo Switch**, consulta las
+[descargas del autor original](https://github.com/mamesj/pokemon-ds-widescreen/releases).
+Son versiones originales; no incluyen las adaptaciones españolas de este fork.
+Las instrucciones generales del proyecto original se conservan a continuación.
 
 ## Use your own save
 
@@ -142,8 +143,8 @@ DS game, presented the way it should look on a modern screen.
 
 ![The PC game list: Black, White, Black 2, White 2, HeartGold, SoulSilver and Platinum in a grid on black, White 2 chosen in red with its save found](docs/screenshots/pc-game-list.png)
 
-1. **Download** [`pokemon-ds-wide-pc-windows-x86_64.zip`](../../releases/tag/pc-v1)
-   (Windows) or [`pokemon-ds-wide-pc-linux-x86_64.tar.gz`](../../releases/tag/pc-v1) (Linux).
+1. **Download** [`pokemon-ds-wide-pc-windows-x86_64.zip`](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/pokemon-ds-wide-pc-windows-x86_64.zip)
+   (Windows) or [`pokemon-ds-wide-pc-linux-x86_64.tar.gz`](https://github.com/mamesj/pokemon-ds-widescreen/releases/download/pc-v1/pokemon-ds-wide-pc-linux-x86_64.tar.gz) (Linux).
    On Linux there is also an **AppImage**, the program as one file: add it to Gear Lever (or
    another AppImage manager) and it updates itself. Its ROMs, saves and settings go in
    `~/.local/share/pokemon-ds-wide` (**O** in the game list opens its `roms` folder).
@@ -316,7 +317,7 @@ the next one falls back by itself (hold L while starting for the interpreter).
 
 ## On Android
 
-1. **Download** [`pokemon-ds-wide-android.apk`](../../releases/tag/android-v1) on
+1. **Download** [`pokemon-ds-wide-android.apk`](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/pokemon-ds-wide-android.apk) on
    your phone and open it. Android asks to allow installing apps from your
    browser or Files app the first time: allow it, then install.
 2. **Put your ROMs** in a folder on the phone (any names), for example `ROMs` in
@@ -349,7 +350,7 @@ iPhone. From a Windows PC or a Mac:
 
 1. **Install a sideloading tool:** [Sideloadly](https://sideloadly.io) or
    [AltStore](https://altstore.io) (on Windows, also Apple's **Apple Devices** app or iTunes).
-2. **Download** [`pokemon-ds-wide-ios.ipa`](../../releases/tag/ios-v1), plug in your iPhone
+2. **Download** [`pokemon-ds-wide-ios.ipa`](https://github.com/ivange91/pokemon-ds-widescreen/releases/download/en-es-v0.1.0/pokemon-ds-wide-ios.ipa), plug in your iPhone
    (tap **Trust** on it), and give the IPA to the tool with your Apple ID.
 3. **On the iPhone:** turn on **Settings > Privacy & Security > Developer Mode** (it restarts),
    then trust your Apple ID in **Settings > General > VPN & Device Management**.
