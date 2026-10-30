@@ -276,7 +276,9 @@ DESKTOP
         sed 's|^usr/bin/|pokemon-ds-wide/|' | check_contents)
     say "Done: $HERE/build-pc-dist/$APPIMAGE"
 fi
-ls -l build-pc-dist/*.zip build-pc-dist/*.tar.gz build-pc-dist/*.AppImage* 2>/dev/null
+for archive in build-pc-dist/*.zip build-pc-dist/*.tar.gz build-pc-dist/*.AppImage*; do
+    [ ! -f "$archive" ] || ls -l "$archive"
+done
 cat <<EOF
 
 Unpack the download anywhere, put your ROMs in its roms folder (any names: English Black, White,
