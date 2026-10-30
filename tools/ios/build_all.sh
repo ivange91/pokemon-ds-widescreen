@@ -61,6 +61,11 @@ python3 tools/bw2/funcmap.py build-decomp-pokew2/config/w2_us/arm9 - "$DATA/func
 python3 tools/bw1/funcmap.py build-decomp-aletheia/layout/function_addrs.tsv - "$DATA/funcs/IRBO.txt"
 python3 tools/bw1/funcmap.py build-decomp-aletheia/layout/function_addrs.tsv - "$DATA/funcs/IRAO.txt" --white
 cp tools/platinum/CPUE.txt "$DATA/funcs/CPUE.txt"
+cp tools/platinum/CPUS.txt "$DATA/funcs/CPUS.txt"
+cp tools/regions/IRBS.txt "$DATA/funcs/IRBS.txt"
+cp tools/regions/IRAS.txt "$DATA/funcs/IRAS.txt"
+cp tools/regions/IRES.txt "$DATA/funcs/IRES.txt"
+cp tools/regions/IRDS.txt "$DATA/funcs/IRDS.txt"
 
 if [ "$TARGET" = simulator ]; then
     SDK=iphonesimulator
@@ -154,7 +159,7 @@ rm -rf "$DIST/Payload"
 # Only the program, its tables, licence, icons and Info.plist: never a ROM, save or game code.
 python3 - "$IPA" <<'PY'
 import re, sys, zipfile
-ok = re.compile(r'^Payload/(Pokemon DS Widescreen\.app/(pokemon-ds-wide|Info\.plist|LICENSE\.txt|AppIcon[0-9.x@~a-z]+\.png|_CodeSignature/(CodeResources)?|data/|data/funcs/|data/funcs/(IREO|IRDO|IRBO|IRAO|CPUE)\.txt)?)?$')
+ok = re.compile(r'^Payload/(Pokemon DS Widescreen\.app/(pokemon-ds-wide|Info\.plist|LICENSE\.txt|AppIcon[0-9.x@~a-z]+\.png|_CodeSignature/(CodeResources)?|data/|data/funcs/|data/funcs/(IREO|IRDO|IRBO|IRAO|CPUE|CPUS|IRBS|IRAS|IRES|IRDS)\.txt)?)?$')
 names = zipfile.ZipFile(sys.argv[1]).namelist()
 bad = [n for n in names if not ok.match(n)]
 if bad: sys.exit('unexpected files in the iOS download: %s' % bad)

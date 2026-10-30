@@ -79,7 +79,7 @@ bool RomfsReady()
 bool Playable(const Launcher::Game& g)
 {
     if (!g.known) return false;
-    if (g.code == "IPGE" || g.code == "IPKE") return rc_num_chunks > 0;
+    if (RomVersions::Hgss(g.code)) return rc_num_chunks > 0;
     struct stat st;
     if (stat((g.folder + "/funcs.txt").c_str(), &st) == 0) return true;
     return RomfsReady() && stat(("romfs:/funcs/" + g.code + ".txt").c_str(), &st) == 0;
@@ -640,7 +640,7 @@ bool Start(int& argc, char**& argv)
     char code[5] = {};
     memcpy(code, game.code.data(), std::min<size_t>(4, game.code.size()));
     // SoulSilver and HeartGold (US): the same program, layouts from its own tables.
-    const bool heartSilver = !strcmp(code, "IPGE") || !strcmp(code, "IPKE");
+    const bool heartSilver = RomVersions::Hgss(code);
     // The save is named after the game (SoulSilver's name is the one earlier builds used), in
     // the game's own folder.
     const std::string saveName = game.saveName;
@@ -675,7 +675,7 @@ bool Start(int& argc, char**& argv)
                             "    and Pokemon White (IRAO), US and Europe;\n"
                             "    Pokemon SoulSilver (IPGE) and Pokemon HeartGold (IPKE), US, with the\n"
                             "    SoulSilver and HeartGold download;\n"
-                            "    Pokemon Platinum (CPUE), with the Platinum download.\n"
+                            "    Pokemon Platinum (CPUE / CPUS), with the Platinum download.\n"
                             "  Other languages put the game's code in other places.");
                 return false;
             }

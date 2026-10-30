@@ -1,0 +1,97 @@
+name: EN-ES application packages
+
+on:
+  push:
+    branches: [build/en-es]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows
+            runner: ubuntu-24.04
+            output: build-pc-dist/pokemon-ds-wide-pc-windows-x86_64.zip
+          - platform: android
+            runner: ubuntu-24.04
+            output: build-android-dist/pokemon-ds-wide-android.apk
+          - platform: ios
+            runner: macos-15-intel
+            output: build-ios-dist/pokemon-ds-wide-ios.ipa
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    env:
+      CMAKE_BUILD_PARALLEL_LEVEL: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build tools
+        run: python -m pip install 'cmake>=3.21,<4' ninja pillow
+      - name: Windows cross compiler
+        if: matrix.platform == 'windows'
+        run: sudo apt-get update && sudo apt-get install -y g++-mingw-w64-x86-64-posix
+      - uses: actions/setup-java@v4
+        if: matrix.platform == 'android'
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Android SDK
+        if: matrix.platform == 'android'
+        run: |
+          sdkmanager --install 'build-tools;34.0.0' 'platforms;android-34' 'ndk;27.2.12479018'
+          echo "ANDROID_SDK=$ANDROID_HOME" >> "$GITHUB_ENV"
+      - name: Address-only tables (no ROM or recompiled instructions)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir inputs
+          gh release download build-inputs-en-es -R '${{ github.repository }}' -p hgss-tables-en-es.tar.gz -D inputs
+          python - <<'PY'
+          import hashlib, pathlib, tarfile
+          p = pathlib.Path('inputs/hgss-tables-en-es.tar.gz')
+          assert hashlib.sha256(p.read_bytes()).hexdigest() == '95f95d426e32694be3897c0122383e6cd02859941cafc72697262e0fdb3b13fd'
+          with tarfile.open(p) as archive:
+              expected = {'build-gen-tables/' + n for n in ('apps_table.cpp', 'rc_portable.cpp', 'rc_tables.cpp', 'sources.cmake')}
+              assert set(archive.getnames()) == expected
+              assert all(m.isfile() for m in archive.getmembers())
+              archive.extractall('inputs', filter='data')
+          PY
+          echo "SSR_TABLES_DIR=$PWD/inputs/build-gen-tables" >> "$GITHUB_ENV"
+      - name: Android signing key
+        if: matrix.platform == 'android'
+        env:
+          SIGNING_KEY: ${{ secrets.EN_ES_ANDROID_SIGNING_KEY }}
+        run: |
+          python - <<'PY'
+          import os, pathlib
+          key = os.environ['SIGNING_KEY']
+          if not key:
+              raise SystemExit('Missing EN_ES_ANDROID_SIGNING_KEY repository secret')
+          p = pathlib.Path(os.environ['RUNNER_TEMP']) / 'android-signing-key.json'
+          p.write_text(key)
+          p.chmod(0o600)
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write(f'SSR_ANDROID_KEY={p}\n')
+          PY
+      - name: Windows ZIP
+        if: matrix.platform == 'windows'
+        run: bash tools/pc/build_all.sh windows
+      - name: Android APK
+        if: matrix.platform == 'android'
+        run: bash tools/android/build_all.sh
+      - name: iOS IPA for sideloading
+        if: matrix.platform == 'ios'
+        run: bash tools/ios/build_all.sh "$SSR_TABLES_DIR"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pokemon-ds-wide-${{ matrix.platform }}-en-es
+          path: ${{ matrix.output }}
+          if-no-files-found: error
+          retention-days: 30

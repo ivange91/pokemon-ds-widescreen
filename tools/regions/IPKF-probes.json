@@ -1,0 +1,1172 @@
+[
+  {
+    "section": "main",
+    "english": 33654436,
+    "target": 33654436,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33706500,
+    "target": 33706500,
+    "bytes": 24
+  },
+  {
+    "section": "main",
+    "english": 33706532,
+    "target": 33706532,
+    "bytes": 24
+  },
+  {
+    "section": "main",
+    "english": 33706564,
+    "target": 33706564,
+    "bytes": 64
+  },
+  {
+    "section": "main",
+    "english": 33706652,
+    "target": 33706652,
+    "bytes": 64
+  },
+  {
+    "section": "main",
+    "english": 33706740,
+    "target": 33706740,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 33706784,
+    "target": 33706784,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 33717272,
+    "target": 33717272,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33720680,
+    "target": 33720680,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33799920,
+    "target": 33799912,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33802416,
+    "target": 33802408,
+    "bytes": 64
+  },
+  {
+    "section": "main",
+    "english": 33804900,
+    "target": 33804892,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33804936,
+    "target": 33804928,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33805004,
+    "target": 33804996,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33805036,
+    "target": 33805028,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33805060,
+    "target": 33805052,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 33807988,
+    "target": 33807980,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 33808036,
+    "target": 33808028,
+    "bytes": 16
+  },
+  {
+    "section": "main",
+    "english": 33808060,
+    "target": 33808052,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 33809320,
+    "target": 33809312,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 33809324,
+    "target": 33809316,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 33809344,
+    "target": 33809336,
+    "bytes": 16
+  },
+  {
+    "section": "main",
+    "english": 34049584,
+    "target": 34049576,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34050100,
+    "target": 34050092,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34051552,
+    "target": 34051544,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34089224,
+    "target": 34089216,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34089760,
+    "target": 34089752,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34090728,
+    "target": 34090720,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34112152,
+    "target": 34112144,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34112548,
+    "target": 34112540,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34112876,
+    "target": 34112868,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34151644,
+    "target": 34151636,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34151704,
+    "target": 34151696,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34151988,
+    "target": 34151980,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34152868,
+    "target": 34152860,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34152932,
+    "target": 34152924,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34153096,
+    "target": 34153088,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 34170276,
+    "target": 34170268,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34170376,
+    "target": 34170368,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34170684,
+    "target": 34170676,
+    "bytes": 128
+  },
+  {
+    "section": "main",
+    "english": 34175864,
+    "target": 34175856,
+    "bytes": 64
+  },
+  {
+    "section": "main",
+    "english": 34175916,
+    "target": 34175908,
+    "bytes": 32
+  },
+  {
+    "section": "main",
+    "english": 34175952,
+    "target": 34175944,
+    "bytes": 64
+  },
+  {
+    "section": "field",
+    "english": 35544036,
+    "target": 35544068,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_12",
+    "english": 36072312,
+    "target": 36072344,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_14",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_14",
+    "english": 35543404,
+    "target": 35543436,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_14",
+    "english": 35543432,
+    "target": 35543464,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_15",
+    "english": 35623808,
+    "target": 35623840,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_15",
+    "english": 35624456,
+    "target": 35624488,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_15",
+    "english": 35625004,
+    "target": 35625036,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_16",
+    "english": 35658092,
+    "target": 35658124,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_16",
+    "english": 35658168,
+    "target": 35658200,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_16",
+    "english": 35658244,
+    "target": 35658276,
+    "bytes": 64
+  },
+  {
+    "section": "OVY_18",
+    "english": 35543708,
+    "target": 35543744,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_18",
+    "english": 35543904,
+    "target": 35543940,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_18",
+    "english": 35543932,
+    "target": 35543968,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_27",
+    "english": 36029492,
+    "target": 36029332,
+    "bytes": 128
+  },
+  {
+    "section": "touch_save_app",
+    "english": 36034948,
+    "target": 36034788,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_31",
+    "english": 36034464,
+    "target": 36034304,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_41",
+    "english": 35961360,
+    "target": 35961392,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_41",
+    "english": 35961548,
+    "target": 35961580,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_41",
+    "english": 35961764,
+    "target": 35961796,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_43",
+    "english": 35823328,
+    "target": 35823360,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_43",
+    "english": 35823540,
+    "target": 35823572,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_43",
+    "english": 35823788,
+    "target": 35823820,
+    "bytes": 128
+  },
+  {
+    "section": "trainer_card",
+    "english": 35543332,
+    "target": 35543364,
+    "bytes": 128
+  },
+  {
+    "section": "trainer_card",
+    "english": 35543388,
+    "target": 35543420,
+    "bytes": 128
+  },
+  {
+    "section": "trainer_card",
+    "english": 35543464,
+    "target": 35543496,
+    "bytes": 32
+  },
+  {
+    "section": "trainer_card_signature",
+    "english": 35553472,
+    "target": 35553504,
+    "bytes": 128
+  },
+  {
+    "section": "trainer_card_signature",
+    "english": 35553864,
+    "target": 35553896,
+    "bytes": 64
+  },
+  {
+    "section": "trainer_card_signature",
+    "english": 35553964,
+    "target": 35553996,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_53",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_53",
+    "english": 35543444,
+    "target": 35543476,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_53",
+    "english": 35543880,
+    "target": 35543912,
+    "bytes": 128
+  },
+  {
+    "section": "options_app",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "options_app",
+    "english": 35543568,
+    "target": 35543600,
+    "bytes": 128
+  },
+  {
+    "section": "options_app",
+    "english": 35543868,
+    "target": 35543900,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_58",
+    "english": 35879140,
+    "target": 35879172,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_58",
+    "english": 35879204,
+    "target": 35879236,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_58",
+    "english": 35879324,
+    "target": 35879356,
+    "bytes": 128
+  },
+  {
+    "section": "intro_title",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "intro_title",
+    "english": 35543496,
+    "target": 35543528,
+    "bytes": 128
+  },
+  {
+    "section": "intro_title",
+    "english": 35544228,
+    "target": 35544260,
+    "bytes": 128
+  },
+  {
+    "section": "intro_title",
+    "english": 35548008,
+    "target": 35548040,
+    "bytes": 128
+  },
+  {
+    "section": "intro_title",
+    "english": 35548168,
+    "target": 35548200,
+    "bytes": 128
+  },
+  {
+    "section": "intro_title",
+    "english": 35548412,
+    "target": 35548444,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_61",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_61",
+    "english": 35543608,
+    "target": 35543640,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_61",
+    "english": 35544948,
+    "target": 35544980,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_62",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_62",
+    "english": 35543488,
+    "target": 35543520,
+    "bytes": 64
+  },
+  {
+    "section": "OVY_62",
+    "english": 35543580,
+    "target": 35543612,
+    "bytes": 64
+  },
+  {
+    "section": "OVY_63",
+    "english": 35765792,
+    "target": 35765824,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_63",
+    "english": 35766056,
+    "target": 35766088,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_63",
+    "english": 35766152,
+    "target": 35766184,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_64",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_64",
+    "english": 35543496,
+    "target": 35543528,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_64",
+    "english": 35543576,
+    "target": 35543608,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_65",
+    "english": 35765792,
+    "target": 35765824,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_65",
+    "english": 35766864,
+    "target": 35766896,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_65",
+    "english": 35769716,
+    "target": 35769748,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_69",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_69",
+    "english": 35543604,
+    "target": 35543636,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_69",
+    "english": 35545216,
+    "target": 35545248,
+    "bytes": 64
+  },
+  {
+    "section": "OVY_71",
+    "english": 35940704,
+    "target": 35940736,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_71",
+    "english": 35941208,
+    "target": 35941240,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_71",
+    "english": 35941304,
+    "target": 35941336,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_72",
+    "english": 35880480,
+    "target": 35880512,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_72",
+    "english": 35880860,
+    "target": 35880892,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_72",
+    "english": 35881072,
+    "target": 35881104,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35817760,
+    "target": 35817792,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35817940,
+    "target": 35817972,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35818592,
+    "target": 35818624,
+    "bytes": 64
+  },
+  {
+    "section": "OVY_74",
+    "english": 35820032,
+    "target": 35820064,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35820180,
+    "target": 35820212,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35820624,
+    "target": 35820656,
+    "bytes": 32
+  },
+  {
+    "section": "OVY_74",
+    "english": 35827308,
+    "target": 35827340,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35832556,
+    "target": 35832588,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35835284,
+    "target": 35835316,
+    "bytes": 64
+  },
+  {
+    "section": "OVY_74",
+    "english": 35861044,
+    "target": 35861072,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35861240,
+    "target": 35861268,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_74",
+    "english": 35862744,
+    "target": 35862772,
+    "bytes": 64
+  },
+  {
+    "section": "credits",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "credits",
+    "english": 35543712,
+    "target": 35543744,
+    "bytes": 128
+  },
+  {
+    "section": "credits",
+    "english": 35543904,
+    "target": 35543936,
+    "bytes": 128
+  },
+  {
+    "section": "certificates_app",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "certificates_app",
+    "english": 35543532,
+    "target": 35543564,
+    "bytes": 128
+  },
+  {
+    "section": "certificates_app",
+    "english": 35543844,
+    "target": 35543876,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_84",
+    "english": 35904864,
+    "target": 35904896,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_84",
+    "english": 35905208,
+    "target": 35905240,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_84",
+    "english": 35905520,
+    "target": 35905552,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_87",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_87",
+    "english": 35543476,
+    "target": 35543508,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_87",
+    "english": 35543744,
+    "target": 35543776,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_95",
+    "english": 35548528,
+    "target": 35548560,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_95",
+    "english": 35548808,
+    "target": 35548840,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_95",
+    "english": 35548940,
+    "target": 35548972,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_96",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_96",
+    "english": 35543616,
+    "target": 35543648,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_96",
+    "english": 35543944,
+    "target": 35543976,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35543556,
+    "target": 35543588,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35543608,
+    "target": 35543640,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35547004,
+    "target": 35547036,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35547200,
+    "target": 35547232,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35547272,
+    "target": 35547304,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35551256,
+    "target": 35551288,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35551472,
+    "target": 35551504,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35551564,
+    "target": 35551596,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35554052,
+    "target": 35554084,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35554220,
+    "target": 35554252,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_99",
+    "english": 35554292,
+    "target": 35554324,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear",
+    "english": 35546156,
+    "target": 35546188,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear",
+    "english": 35546400,
+    "target": 35546432,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear",
+    "english": 35546556,
+    "target": 35546588,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35551040,
+    "target": 35551072,
+    "bytes": 64
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35551132,
+    "target": 35551164,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35551284,
+    "target": 35551316,
+    "bytes": 64
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35575800,
+    "target": 35575832,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35575988,
+    "target": 35576020,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35576100,
+    "target": 35576132,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35580136,
+    "target": 35580168,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35580196,
+    "target": 35580228,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35580324,
+    "target": 35580356,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35584072,
+    "target": 35584104,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35584144,
+    "target": 35584176,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35584320,
+    "target": 35584352,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35603584,
+    "target": 35603624,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35603644,
+    "target": 35603684,
+    "bytes": 128
+  },
+  {
+    "section": "pokegear_app",
+    "english": 35603756,
+    "target": 35603796,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_102",
+    "english": 35551040,
+    "target": 35551072,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_102",
+    "english": 35551160,
+    "target": 35551192,
+    "bytes": 32
+  },
+  {
+    "section": "OVY_102",
+    "english": 35551336,
+    "target": 35551368,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_108",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_108",
+    "english": 35543368,
+    "target": 35543400,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_108",
+    "english": 35543416,
+    "target": 35543448,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_108",
+    "english": 35555408,
+    "target": 35555440,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_108",
+    "english": 35555524,
+    "target": 35555556,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_108",
+    "english": 35555588,
+    "target": 35555620,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_109",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_109",
+    "english": 35543400,
+    "target": 35543432,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_109",
+    "english": 35543536,
+    "target": 35543568,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_110",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_110",
+    "english": 35543412,
+    "target": 35543444,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_110",
+    "english": 35543540,
+    "target": 35543572,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_111",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_111",
+    "english": 35543392,
+    "target": 35543424,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_111",
+    "english": 35543480,
+    "target": 35543512,
+    "bytes": 32
+  },
+  {
+    "section": "OVY_113",
+    "english": 35543296,
+    "target": 35543328,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_113",
+    "english": 35543400,
+    "target": 35543432,
+    "bytes": 128
+  },
+  {
+    "section": "OVY_113",
+    "english": 35543496,
+    "target": 35543528,
+    "bytes": 128
+  },
+  {
+    "section": "voltorb_flip",
+    "english": 35553960,
+    "target": 35553992,
+    "bytes": 128
+  },
+  {
+    "section": "voltorb_flip",
+    "english": 35554056,
+    "target": 35554088,
+    "bytes": 128
+  },
+  {
+    "section": "voltorb_flip",
+    "english": 35554144,
+    "target": 35554176,
+    "bytes": 128
+  }
+]

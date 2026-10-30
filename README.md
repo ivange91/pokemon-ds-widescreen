@@ -26,6 +26,14 @@ One program per platform: start it and pick the game from the list. The
 downloads are free of the games themselves: you bring your own ROMs, and the
 program reads what it needs from them when the game starts.
 
+## Spanish versions in this branch
+
+The local build also recognises Spanish Black, White, Black 2, White 2 and
+SoulSilver (revision 0), alongside Spanish Platinum. HeartGold currently
+supports the specifically verified Spanish FIX copy; other Spanish HeartGold
+dumps have not been mapped. The old SoulSilver FIX copy is not supported.
+These additions are not yet included in the release downloads linked above.
+
 ## Use your own save
 
 Carry on from your own save: from another emulator, a flash cart or your real
@@ -45,7 +53,10 @@ cartridge. Copy it in under the game's name, in this folder:
 | Black 2 / White 2 | `black2.sav` / `white2.sav` |
 | Black / White | `black.sav` / `white.sav` |
 | SoulSilver / HeartGold | `soulsilver.sav` / `heartgold.sav` |
-| Platinum | `platinum.sav` |
+| Black 2 / White 2 (Spanish) | `black2-es.sav` / `white2-es.sav` |
+| Black / White (Spanish) | `black-es.sav` / `white-es.sav` |
+| SoulSilver / HeartGold FIX (Spanish) | `soulsilver-es.sav` / `heartgold-es-fix.sav` |
+| Platinum (English / Spanish) | `platinum.sav` / `platinum-es.sav` |
 
 - **Which files work:** a plain `.sav`, as melonDS, DeSmuME (Export Backup
   Memory), flash carts (TWiLight Menu++, R4 and the like) and cartridge dump
@@ -374,8 +385,7 @@ Please tell us how it runs on yours, with your model (see [Reporting a bug](#rep
 | ![Black 2: the view from Aspertia's lookout, sky and mountains carried to the edges](docs/screenshots/black2-aspertia-lookout.jpg) | ![Black 2: Castelia City's pier](docs/screenshots/black2-castelia-pier.jpg) |
 
 - **ROMs:** any English copy (US or Europe), trimmed or not, including the
-  "NDSi Enhanced" one. Other languages put the game's code elsewhere: the
-  program says so instead of starting.
+  "NDSi Enhanced" one; Spanish revision 0 is also supported in this branch.
 - **Saves:** `black2.sav` and `white2.sav` (`tools/bw2/convert_save.py` turns
   `.dsv` and Action Replay saves into the raw 512 KB save).
 - **What you get:** battles (single, double, triple, rotation) with the HP boxes
@@ -391,8 +401,8 @@ Please tell us how it runs on yours, with your model (see [Reporting a bug](#rep
 |---|---|
 | ![HeartGold: Totodile against a wild Pidgey on Route 29, with FIGHT, BAG, RUN, POKÉMON and the party beside the battle](docs/screenshots/heartgold-totodile-battle.jpg) | ![SoulSilver: Lugia following you along Route 7](docs/screenshots/soulsilver-lugia-following.jpg) |
 
-- **ROMs:** the English US versions. Other versions start, but without the
-  one-screen layouts.
+- **ROMs:** the English US versions, Spanish SoulSilver revision 0, and the
+  verified Spanish HeartGold FIX copy (see above).
 - **Saves:** `soulsilver.sav` and `heartgold.sav` (the same format, so either
   game reads the other's).
 - **What you get:** Johto and Kanto in widescreen, with your partner Pokémon
@@ -407,7 +417,8 @@ Please tell us how it runs on yours, with your model (see [Reporting a bug](#rep
 | ![Black: Reshiram against a wild Mantyke, with the game's FIGHT, BAG, RUN and POKÉMON panel beside the battle](docs/screenshots/black-reshiram-battle.jpg) | ![White: Zekrom in battle, with the FIGHT panel beside it](docs/screenshots/white-zekrom-battle.jpg) |
 | ![Black: a double battle, Reshiram and Excadrill against a wild Pelipper and Mantyke, the HP boxes down the edges](docs/screenshots/black-reshiram-double.jpg) | ![Black: Nimbasa City in widescreen](docs/screenshots/black-nimbasa.jpg) |
 
-- **ROMs:** any English copy (US or Europe), trimmed or not.
+- **ROMs:** any English copy (US or Europe), trimmed or not; Spanish revision 0
+  is also supported in this branch.
 - **Saves:** `black.sav` and `white.sav` (the same format, so either game reads
   the other's; `tools/bw2/convert_save.py` turns `.dsv` and Action Replay saves
   into the raw 512 KB save).
@@ -423,8 +434,8 @@ Please tell us how it runs on yours, with your model (see [Reporting a bug](#rep
 |---|---|
 | ![Platinum: Infernape against a wild Machoke, with FIGHT, BAG, RUN and POKÉMON beside the battle](docs/screenshots/platinum-infernape-battle.jpg) | ![Platinum: Snowpoint City in the snow, in widescreen](docs/screenshots/platinum-snowpoint.jpg) |
 
-- **ROM:** the English US version (game code `CPUE`), trimmed or not.
-- **Save:** `platinum.sav`.
+- **ROM:** the English US version (`CPUE`), or the Spanish version (`CPUS`, revision 0).
+- **Save:** `platinum.sav` for English; `platinum-es.sav` for Spanish, so both can coexist.
 - **What you get:** Sinnoh in widescreen, the snow and rain reaching the edges
   of the view; battles with their buttons and moves beside the action; the X
   menu at the right edge of the view, and the Bag, party, Pokédex, map and
@@ -442,8 +453,9 @@ OLED in handheld mode; a PC has room to spare, and draws the same picture up to
 
 ## Known limits
 
-- Black, White, Black 2 and White 2: English (US/Europe) versions only. SoulSilver,
-  HeartGold and Platinum: US versions only.
+- Languages: the English versions and the Spanish versions listed above.
+  Other languages, Diamond, Pearl and spin-offs are not supported. The Spanish
+  additions have startup/menu checks, not a complete playthrough.
 - Platinum: the Pokétch (the watch on the touch screen) isn't shown during
   normal play; its apps are one press of the screen-swap button away.
 - SoulSilver and HeartGold: at map borders (Route 29 and New Bark Town, Celadon

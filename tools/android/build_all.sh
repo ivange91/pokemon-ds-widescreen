@@ -25,6 +25,7 @@
 #   SSR_ANDROID_KEY=key.json    the signing key, made on the first build: keep it, as Android
 #                               only installs an update over an app signed with the same key
 #                               (default ~/.config/pokemon-ds-wide/android-signing-key.json)
+# SSR_TABLES_DIR may point to tables_only.py output for ROM-free CI builds.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
@@ -51,11 +52,18 @@ PLATFORM=android-24   # Android 7.0 and later
 say() { printf '\n== %s\n' "$*"; }
 fail() { printf '\nerror: %s\n' "$*" >&2; exit 1; }
 
-[ -n "$ROM" ] || fail "give your SoulSilver ROM (US): tools/android/build_all.sh your-soulsilver-us.nds"
-[ -f "$ROM" ] || fail "no such file: $ROM"
-[ "$(dd if="$ROM" bs=1 skip=12 count=4 2>/dev/null)" = IPGE ] ||
-    fail "$ROM is not Pokemon SoulSilver (US, game code IPGE): the tables are made from it"
-ROM="$(cd "$(dirname "$ROM")" && pwd)/$(basename "$ROM")"
+TABLES="${SSR_TABLES_DIR:-}"
+if [ -n "$TABLES" ]; then
+    TABLES="$(cd "$TABLES" && pwd)"
+    [ -f "$TABLES/sources.cmake" ] || fail "no address tables in $TABLES"
+    ls "$TABLES"/rc_[0-9]*.cpp >/dev/null 2>&1 && fail "use tables_only.py output, not recompiled game code"
+else
+    [ -n "$ROM" ] || fail "give your SoulSilver ROM (US): tools/android/build_all.sh your-soulsilver-us.nds"
+    [ -f "$ROM" ] || fail "no such file: $ROM"
+    [ "$(dd if="$ROM" bs=1 skip=12 count=4 2>/dev/null)" = IPGE ] ||
+        fail "$ROM is not Pokemon SoulSilver (US, game code IPGE): the tables are made from it"
+    ROM="$(cd "$(dirname "$ROM")" && pwd)/$(basename "$ROM")"
+fi
 for tool in git cmake ninja python3 curl zip javac; do
     command -v "$tool" >/dev/null || fail "$tool is not installed (Ubuntu: sudo apt install git cmake ninja-build python3 curl zip openjdk-17-jdk-headless)"
 done
@@ -82,12 +90,15 @@ fetch_symbols() { # dir url commit paths...
 
 # SoulSilver and HeartGold's tables (addresses only) and the function tables, as for the PC
 # download (tools/pc/build_all.sh).
-if [ ! -f gen/sources.cmake ]; then
-    say "SoulSilver's tables, from $ROM"
-    python3 tools/recomp.py --rom "$ROM" --layout layouts/soulsilver-us.json melonDS/src gen
-    python3 tools/apps.py --layout layouts/soulsilver-us.json gen
+if [ -z "$TABLES" ]; then
+    if [ ! -f gen/sources.cmake ]; then
+        say "SoulSilver's tables, from $ROM"
+        python3 tools/recomp.py --rom "$ROM" --layout layouts/soulsilver-us.json melonDS/src gen
+        python3 tools/apps.py --layout layouts/soulsilver-us.json gen
+    fi
+    python3 tools/soulsilver/tables_only.py gen build-gen-tables
+    TABLES="$HERE/build-gen-tables"
 fi
-python3 tools/soulsilver/tables_only.py gen build-gen-tables
 FUNCS="$HERE/build-android-data/funcs"
 rm -rf "$FUNCS"
 mkdir -p "$FUNCS"
@@ -102,6 +113,11 @@ python3 tools/bw2/funcmap.py build-decomp-pokew2/config/w2_us/arm9 - "$FUNCS/IRD
 python3 tools/bw1/funcmap.py build-decomp-aletheia/layout/function_addrs.tsv - "$FUNCS/IRBO.txt"
 python3 tools/bw1/funcmap.py build-decomp-aletheia/layout/function_addrs.tsv - "$FUNCS/IRAO.txt" --white
 cp tools/platinum/CPUE.txt "$FUNCS/CPUE.txt"
+cp tools/platinum/CPUS.txt "$FUNCS/CPUS.txt"
+cp tools/regions/IRBS.txt "$FUNCS/IRBS.txt"
+cp tools/regions/IRAS.txt "$FUNCS/IRAS.txt"
+cp tools/regions/IRES.txt "$FUNCS/IRES.txt"
+cp tools/regions/IRDS.txt "$FUNCS/IRDS.txt"
 
 DEPS="$HERE/build-android-deps"
 if [ ! -f "$DEPS/$SDL_NAME/CMakeLists.txt" ]; then
@@ -131,7 +147,7 @@ for abi in $ABIS; do
     # the building machine's AVX2.
     cmake -S . -B "build-android-all-$abi" "${ARGS[@]}" -DSDL2_DIR="$SDL_PREFIX/lib/cmake/SDL2" \
         -DSSR_JIT=ON -DSSR_PC_ALL_GAMES=ON -DSSR_PNG=OFF -DSSR_GPU3D=OFF -DSSR_PORTABLE_X86=ON \
-        -DSSR_GENERATED_DIR="$HERE/build-gen-tables" -DSSR_PC_ART="$ART" >/dev/null
+        -DSSR_GENERATED_DIR="$TABLES" -DSSR_PC_ART="$ART" >/dev/null
     ninja -C "build-android-all-$abi" ssrecomp
     mkdir -p "build-android-dist/lib/$abi"
     "$STRIP" -o "build-android-dist/lib/$abi/libmain.so" "build-android-all-$abi/libmain.so"
@@ -209,7 +225,7 @@ PY
 # Only the app's own files may be in it: never a ROM, save or game code.
 python3 - "$APK" <<'PY'
 import re, sys, zipfile
-ok = re.compile(r'^(AndroidManifest\.xml|resources\.arsc|classes\.dex|res/.*\.png|res/mipmap-anydpi-v26/ic_launcher\.xml|lib/(arm64-v8a|x86_64)/lib(main|SDL2)\.so|assets/funcs/(IREO|IRDO|IRBO|IRAO|CPUE)\.txt)$')
+ok = re.compile(r'^(AndroidManifest\.xml|resources\.arsc|classes\.dex|res/.*\.png|res/mipmap-anydpi-v26/ic_launcher\.xml|lib/(arm64-v8a|x86_64)/lib(main|SDL2)\.so|assets/funcs/(IREO|IRDO|IRBO|IRAO|CPUE|CPUS|IRBS|IRAS|IRES|IRDS)\.txt)$')
 bad = [n for n in zipfile.ZipFile(sys.argv[1]).namelist() if not ok.match(n)]
 if bad: sys.exit('unexpected files in the APK: %s' % bad)
 PY

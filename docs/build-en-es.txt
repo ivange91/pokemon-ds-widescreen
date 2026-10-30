@@ -1,0 +1,112 @@
+COMPILAR LAS VERSIONES INGLES/ESPANOL
+
+Base revisada: mamesj/pokemon-ds-widescreen, commit
+2854873b33c20f8e12e58ac1722a21650e74f0a5 (30-10-2026).
+Se conservan los scripts originales, ampliados con las tablas espanolas.
+No se incluyen ROMs, partidas ni codigo recompilado de los juegos en los paquetes.
+Las caratulas y el icono personalizados del autor no vienen con el repositorio.
+
+1. WINDOWS: ZIP PORTABLE (Linux o WSL2 Ubuntu 24.04)
+
+Instalar las dependencias en Ubuntu:
+  sudo apt update
+  sudo apt install git cmake ninja-build python3 curl g++-mingw-w64-x86-64-posix
+
+Desde la raiz del proyecto:
+  bash tools/pc/build_all.sh windows /ruta/SoulSilver-US.nds
+
+En WSL la carpeta del proyecto de Windows se encuentra en:
+  cd /mnt/d/PROYECTOS/PokemonDS1Screen
+La ROM debe estar extraida en formato .nds y tener codigo IPGE. El script la
+usa localmente para preparar tablas, tambien cuando el destino incluye espanol.
+La ROM no se empaqueta. No sirve pasar el archivo .rar directamente.
+
+Resultado:
+  build-pc-dist/pokemon-ds-wide-pc-windows-x86_64.zip
+Contenido: pokemon-ds-wide/, ejecutable, SDL2.dll, licencias, README,
+data/funcs/ y roms/ vacia. El usuario pone sus ROMs en roms/.
+Opcionales: SSR_PC_ICON=/ruta/icono.ico y SSR_PC_ART=/ruta/caratulas.
+
+2. ANDROID: APK (Linux o WSL2 Ubuntu 24.04)
+
+  sudo apt install git cmake ninja-build python3 curl zip openjdk-17-jdk-headless python3-pil
+
+Instalar Android SDK Command-line Tools y, mediante su sdkmanager:
+  sdkmanager --install "build-tools;34.0.0" "platforms;android-34" "ndk;27.2.12479018"
+  sdkmanager --licenses
+
+Indicar la ruta del SDK que se haya instalado y ejecutar:
+  export ANDROID_SDK="$HOME/android-sdk"
+  bash tools/android/build_all.sh /ruta/SoulSilver-US.nds
+
+Resultado: build-android-dist/pokemon-ds-wide-android.apk
+Incluye arm64-v8a y x86_64; para solo telefonos arm64:
+  SSR_ANDROID_ABIS=arm64-v8a bash tools/android/build_all.sh /ruta/SoulSilver-US.nds
+
+El script crea la clave de firma en:
+  ~/.config/pokemon-ds-wide/android-signing-key.json
+Conservar esa clave fuera del repositorio: las actualizaciones deben utilizar
+la misma. Puede elegirse otra ruta con SSR_ANDROID_KEY.
+
+3. IOS: IPA (Mac con Xcode completo)
+
+Instalar Python 3, Git y las herramientas de Xcode; en un entorno Python:
+  python3 -m pip install 'cmake>=3.21,<4' ninja
+
+Preparar las tablas con el proceso anterior de Windows/Android, o localmente:
+  python3 tools/recomp.py --rom /ruta/SoulSilver-US.nds --layout layouts/soulsilver-us.json melonDS/src gen
+  python3 tools/apps.py --layout layouts/soulsilver-us.json gen
+  python3 tools/soulsilver/tables_only.py gen build-gen-tables
+
+Transportar solo build-gen-tables al Mac, NO gen ni la ROM. Regenerar esas
+tablas desde esta rama para incluir los perfiles espanoles de HGSS.
+Tambien se ha conservado una copia local de las tablas en el archivo externo
+hgss-tables-en-es.tar.gz; se extrae con tar -xzf hgss-tables-en-es.tar.gz.
+
+En el Mac, desde la raiz del mismo codigo fuente:
+  bash tools/ios/build_all.sh /ruta/build-gen-tables
+
+Resultado: build-ios-dist/pokemon-ds-wide-ios.ipa
+Es una IPA para sideloading: el script aplica firma ad hoc, no una firma de
+distribucion. AltStore, SideStore o Sideloadly deben volver a firmarla con la
+cuenta del usuario. La version iOS usa interprete, sin JIT.
+Icono y caratulas opcionales: build_all.sh TABLES ART ICON.
+
+4. GITHUB ACTIONS DEL AUTOR
+
+.github/workflows/ios.yml ejecuta el proceso en macos-15-intel y entrega la IPA
+como artefacto. Tambien prueba que abre el selector en el simulador.
+Descarga mac-inputs.tar.gz de una release llamada mac-build-inputs EN EL MISMO
+REPOSITORIO. Ese archivo debe contener build-gen-tables/, box-art/ e icon.jpg.
+Un fork sin esa release no puede ejecutar el workflow original correctamente.
+Para ingles/espanol, las tablas de esa entrada deben ser las regeneradas aqui.
+La alternativa EN/ES al final de esta guia evita depender de esa release original.
+
+El workflow release.yml genera los antiguos instaladores ssrecomp-setup;
+no genera el ZIP portable de todos los juegos. No hay un workflow equivalente
+para el APK o ese ZIP: los scripts de las secciones 1 y 2 son la ruta original.
+
+ESTADO LOCAL
+
+Se ha conservado fuera del repositorio el ZIP de Windows generado a partir del
+binario ya compilado y probado, con el formato del paquete original y las diez
+tablas de funciones EN/ES. No lleva las caratulas o el icono del autor.
+APK e IPA se generan en GitHub Actions con el workflow EN/ES. Los perfiles espanoles no tienen
+una partida completa validada; HeartGold requiere la copia ES FIX verificada.
+La restauracion de estados instantaneos de SoulSilver sigue pendiente de revisar.
+
+FUENTES
+https://github.com/mamesj/pokemon-ds-widescreen/blob/main/tools/pc/build_all.sh
+https://github.com/mamesj/pokemon-ds-widescreen/blob/main/tools/android/build_all.sh
+https://github.com/mamesj/pokemon-ds-widescreen/blob/main/tools/ios/build_all.sh
+https://github.com/mamesj/pokemon-ds-widescreen/blob/main/.github/workflows/ios.yml
+
+COMPILACION EN GITHUB ACTIONS (RAMA build/en-es)
+
+El workflow build-en-es.yml genera ZIP Windows, APK Android e IPA iOS.
+Usa la release borrador build-inputs-en-es con hgss-tables-en-es.tar.gz
+(solo direcciones, comprobadas por SHA-256), sin enviar ROMs a GitHub.
+Windows y Android aceptan SSR_TABLES_DIR para utilizar esas tablas.
+Android usa el secreto EN_ES_ANDROID_SIGNING_KEY, conservado tambien
+localmente fuera del repositorio; no se publica la clave con los artefactos.
+Los tres paquetes se descargan desde los artefactos de la ejecucion.

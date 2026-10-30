@@ -5,9 +5,14 @@ The Pokemon DS games on one widescreen display, with the two DS screens merged i
 the world drawn out to the sides of a 16:9 screen, 60 fps and controller support.
 It plays your own copies of:
 
-  Pokemon Black, White, Black 2 and White 2 (English, US or Europe)
-  Pokemon SoulSilver and HeartGold (US)
-  Pokemon Platinum (US)
+  Pokemon Black, White, Black 2 and White 2 (English US/Europe, or Spanish revision 0)
+  Pokemon SoulSilver (English US, or Spanish revision 0)
+  Pokemon HeartGold (English US, or the verified Spanish FIX copy)
+  Pokemon Platinum (English US, or Spanish CPUS revision 0)
+
+Spanish games have separate saves: black-es.sav, white-es.sav, black2-es.sav,
+white2-es.sav, soulsilver-es.sav, heartgold-es-fix.sav and platinum-es.sav.
+The older SoulSilver Spanish FIX copy is not supported.
 
 Nothing of the games comes with this download: you need your own ROMs (.nds files).
 

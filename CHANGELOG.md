@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- **More Spanish games:** add Black, White, Black 2, White 2, SoulSilver and the
+  verified Spanish HeartGold FIX copy to the game list, with separate saves and
+  regional one-screen layouts. These profiles have startup and menu checks;
+  complete playthroughs are still needed.
+
+- **Pokemon Platinum in Spanish:** the Spanish cartridge (CPUS, revision 0) has its own
+  single-screen layouts and game-list entry. Its save is `platinum-es.sav`, separate from
+  the English game's `platinum.sav`.
+
 - **New: iPhone and iPad.** A sideloaded app (`pokemon-ds-wide-ios.ipa`, iOS 14 or newer): the
   same game list and games as on Android, with the ROMs, saves and settings in the Files app
   (On My iPhone > Pokemon DS Widescreen).

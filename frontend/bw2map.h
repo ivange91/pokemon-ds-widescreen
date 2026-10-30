@@ -81,6 +81,10 @@ private:
             { "IRDO", 0x021ca050, 0x0208ee94, 0x1a3e00, 29 }, // White 2
             { "IRBO", 0x021d3700, 0x0209d8b0, 0x199500, 21 }, // Black
             { "IRAO", 0x021d3718, 0x0209d8c8, 0x199500, 21 }, // White
+            { "IRES", 0x021c9fe0, 0x0208ee38, 0x1a3e00, 29 }, // Black 2, Spanish
+            { "IRDS", 0x021c9ff4, 0x0208ee64, 0x1a3e00, 29 }, // White 2, Spanish
+            { "IRBS", 0x021d36c4, 0x0209d880, 0x199500, 21 }, // Black, Spanish
+            { "IRAS", 0x021d36bc, 0x0209d898, 0x199500, 21 }, // White, Spanish
         };
         for (const Version& v : versions)
             if (!strcmp(code, v.code)) return &v;

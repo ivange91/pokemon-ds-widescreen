@@ -18,6 +18,7 @@
 #include <sys/stat.h>
 
 #include "ui.h"
+#include "romversions.h"
 // (JPEG and PNG pictures for the list: the program that draws it defines STB_IMAGE_IMPLEMENTATION
 // with STBI_ONLY_JPEG and STBI_ONLY_PNG before including this, in one file.)
 #include "thirdparty/stb_image.h"
@@ -62,6 +63,13 @@ inline const KnownGame* Known(const std::string& code)
         { "IPKE", "Pokemon HeartGold", "heartgold.sav" },
         { "IPGE", "Pokemon SoulSilver", "soulsilver.sav" },
         { "CPUE", "Pokemon Platinum", "platinum.sav" },
+        { "CPUS", "Pokemon Platino (ES)", "platinum-es.sav" },
+        { "IRBS", "Pokemon Negro (ES)", "black-es.sav" },
+        { "IRAS", "Pokemon Blanco (ES)", "white-es.sav" },
+        { "IRES", "Pokemon Negro 2 (ES)", "black2-es.sav" },
+        { "IRDS", "Pokemon Blanco 2 (ES)", "white2-es.sav" },
+        { "IPKF", "Pokemon HeartGold (ES FIX)", "heartgold-es-fix.sav" },
+        { "IPGS", "Pokemon SoulSilver (ES)", "soulsilver-es.sav" },
     };
     for (const KnownGame& g : games)
         if (code == g.code) return &g;
@@ -69,10 +77,11 @@ inline const KnownGame* Known(const std::string& code)
 }
 inline int Order(const std::string& code)
 {
-    static const char* order[] = { "IRBO", "IRAO", "IREO", "IRDO", "IPKE", "IPGE", "CPUE" };
-    for (int i = 0; i < 7; i++)
+    static const char* order[] = { "IRBO", "IRBS", "IRAO", "IRAS", "IREO", "IRES", "IRDO", "IRDS",
+                                 "IPKE", "IPKF", "IPGE", "IPGS", "CPUE", "CPUS" };
+    for (int i = 0; i < (int)(sizeof order / sizeof order[0]); i++)
         if (code == order[i]) return i;
-    return 7;
+    return (int)(sizeof order / sizeof order[0]);
 }
 
 inline bool EndsWithNds(const std::string& name)
@@ -133,7 +142,7 @@ inline bool ReadGame(const std::string& rom, const std::string& folder, Game& g)
     if (!ok) return false;
     if (const KnownGame* k = Known(g.code))
     {
-        g.known = true;
+        g.known = RomVersions::AcceptFile(g.code, rom);
         g.name = k->name;
         g.saveName = k->save;
     }

@@ -73,6 +73,8 @@
 #include "glcontext.h"
 #endif
 #include "battlewide.h"
+#include "romversions.h"
+#include "hgss_regions.h"
 #include "platinum.h" // Pokemon Platinum: which of its screens is up
 #include "belowscreen.h"
 #include "recomp_rt.h"
@@ -1569,7 +1571,13 @@ int main(int argc, char** argv)
     FuncWatch::RomPath = opt.rom; // (for a function table that reads its first bytes from it)
     // Pokemon SoulSilver (US): its new game's first menu is skipped (see where keys are sent).
     // (HeartGold too: the same game where it matters here.)
-    const bool soulSilverRom = rom.size() > 0x10 && (memcmp(&rom[0x0C], "IPGE", 4) == 0 || memcmp(&rom[0x0C], "IPKE", 4) == 0);
+    const std::string romCode = rom.size() > 0x10 ? std::string((const char*)&rom[0x0C], 4) : std::string();
+    if (!RomVersions::Accept(romCode, rom))
+    {
+        fprintf(stderr, "Unsupported %.4s ROM: the ES FIX profile needs its verified fingerprint.\n", romCode.c_str());
+        return 1;
+    }
+    const bool soulSilverRom = RomVersions::Hgss(romCode);
     if (rom.empty())
     {
         fprintf(stderr, "cannot read ROM: %s\n", opt.rom.c_str());
@@ -1641,6 +1649,7 @@ int main(int argc, char** argv)
             if (fseek(f, 0x0C, SEEK_SET) != 0 || fread(code, 1, 4, f) != 4) memset(code, 0, 4);
             fclose(f);
         }
+        HgssRegions::Prepare(romCode.c_str());
         if (overlays.Open(opt.rom))
             rc_portable_load(code, [](void* user, int id, unsigned* size) -> const unsigned char* {
                 const NdsOverlays::Overlay* ov = static_cast<NdsOverlays*>(user)->Get((uint32_t)id);

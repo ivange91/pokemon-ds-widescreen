@@ -1,0 +1,3594 @@
+{
+  "IRBS": [
+    {
+      "name": "GFLAppInit",
+      "isa": "t",
+      "module": "main",
+      "english": 33576028,
+      "spanish": 33576028,
+      "bytes": 128,
+      "candidates": [
+        33576028
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "ConfirmDialog_Update",
+      "isa": "t",
+      "module": "main",
+      "english": 33685180,
+      "spanish": 33685132,
+      "bytes": 128,
+      "candidates": [
+        33685132
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "CARD_WaitBackupAsync",
+      "isa": "a",
+      "module": "main",
+      "english": 34040704,
+      "spanish": 34040656,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": 0,
+      "proposals": [
+        [
+          34040656,
+          3
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          24,
+          32,
+          34040656
+        ],
+        [
+          "suffix",
+          32,
+          16,
+          34040656
+        ],
+        [
+          "suffix",
+          64,
+          64,
+          34040656
+        ]
+      ],
+      "arm_call_proof": [
+        {
+          "module": "main",
+          "isa": "a",
+          "english_call": 33764956,
+          "spanish_call": 33764908,
+          "spanish_target": 34040656
+        }
+      ]
+    },
+    {
+      "name": "EventFieldMenu_Callback",
+      "isa": "t",
+      "module": "ov010",
+      "english": 34995468,
+      "spanish": 34995388,
+      "bytes": 128,
+      "candidates": [
+        34995388
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "REPORT_EVENT_Main",
+      "isa": "t",
+      "module": "ov010",
+      "english": 35035832,
+      "spanish": 35035752,
+      "bytes": 128,
+      "candidates": [
+        35035752
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "TRCARD_SYS_StateWaitEditProc",
+      "isa": "t",
+      "module": "ov010",
+      "english": 35058460,
+      "spanish": 35058380,
+      "bytes": 128,
+      "candidates": [
+        35058380
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "TRCARD_SYS_StateWaitBadgeProc",
+      "isa": "t",
+      "module": "ov010",
+      "english": 35058608,
+      "spanish": 35058528,
+      "bytes": 64,
+      "candidates": [
+        35058528
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "FieldmapProc_Update",
+      "isa": "t",
+      "module": "ov021",
+      "english": 35160016,
+      "spanish": 35159952,
+      "bytes": 128,
+      "candidates": [
+        35159952
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "SetupLoadZoneMapTypeData",
+      "isa": "t",
+      "module": "ov021",
+      "english": 35167024,
+      "spanish": 35166960,
+      "bytes": 96,
+      "candidates": [
+        35166960
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GetFieldmapZoneHeapSize",
+      "isa": "t",
+      "module": "ov021",
+      "english": 35167164,
+      "spanish": 35167100,
+      "bytes": 0,
+      "candidates": [
+        35167080,
+        35167100
+      ],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35167100,
+          4
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          24,
+          64,
+          35167100
+        ],
+        [
+          "suffix",
+          32,
+          64,
+          35167100
+        ],
+        [
+          "suffix",
+          48,
+          64,
+          35167100
+        ],
+        [
+          "suffix",
+          64,
+          64,
+          35167100
+        ]
+      ]
+    },
+    {
+      "name": "BtlMain_ProcMain",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35349556,
+      "spanish": 35349492,
+      "bytes": 128,
+      "candidates": [
+        35349492
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "PokeListProc_Main",
+      "isa": "t",
+      "module": "ov091",
+      "english": 35349944,
+      "spanish": 35349880,
+      "bytes": 128,
+      "candidates": [
+        35349880
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneSingle",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35351212,
+      "spanish": 35351148,
+      "bytes": 128,
+      "candidates": [
+        35351148
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneDouble",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35351644,
+      "spanish": 35351580,
+      "bytes": 128,
+      "candidates": [
+        35351580
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneTriple",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35352656,
+      "spanish": 35352592,
+      "bytes": 128,
+      "candidates": [
+        35352592
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneRotation",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35353044,
+      "spanish": 35352980,
+      "bytes": 128,
+      "candidates": [
+        35352980
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ItemMenuProc_Main",
+      "isa": "t",
+      "module": "ov070",
+      "english": 35358980,
+      "spanish": 35358904,
+      "bytes": 128,
+      "candidates": [
+        35358904
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ConfigPanel_Main",
+      "isa": "t",
+      "module": "ov068",
+      "english": 35362828,
+      "spanish": 35362764,
+      "bytes": 128,
+      "candidates": [
+        35362764
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "TownMap_ProcMain",
+      "isa": "t",
+      "module": "ov072",
+      "english": 35363064,
+      "spanish": 35363000,
+      "bytes": 64,
+      "candidates": [
+        35363000
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "StartMenu_Main",
+      "isa": "t",
+      "module": "ov088",
+      "english": 35364836,
+      "spanish": 35364772,
+      "bytes": 32,
+      "candidates": [
+        35364772
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "StartMenu_Continue",
+      "isa": "t",
+      "module": "ov088",
+      "english": 35366208,
+      "spanish": 35366144,
+      "bytes": 128,
+      "candidates": [
+        35366144
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ZukanDetail_Main",
+      "isa": "t",
+      "module": "ov208",
+      "english": 35376052,
+      "spanish": 35375988,
+      "bytes": 128,
+      "candidates": [
+        35375988
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ZknListSeq_Main",
+      "isa": "t",
+      "module": "ov209",
+      "english": 35376216,
+      "spanish": 35376152,
+      "bytes": 128,
+      "candidates": [
+        35376152
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "IntroProc_Main",
+      "isa": "t",
+      "module": "ov204",
+      "english": 35380016,
+      "spanish": 35379952,
+      "bytes": 128,
+      "candidates": [
+        35379952
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "TrainerCard_Main",
+      "isa": "t",
+      "module": "ov111",
+      "english": 35405652,
+      "spanish": 35405556,
+      "bytes": 128,
+      "candidates": [
+        35405556
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "PStatus_ProcMain",
+      "isa": "t",
+      "module": "ov131",
+      "english": 35481020,
+      "spanish": 35480956,
+      "bytes": 64,
+      "candidates": [
+        35480956
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Box2Proc_Main",
+      "isa": "t",
+      "module": "ov170",
+      "english": 35506432,
+      "spanish": 35506400,
+      "bytes": 96,
+      "candidates": [
+        35506400
+      ],
+      "base_delta": -32
+    },
+    {
+      "name": "BtlvCore_WaitCommandSelect",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35559332,
+      "spanish": 35559268,
+      "bytes": 64,
+      "candidates": [
+        35559268
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitMoveSelect",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35559604,
+      "spanish": 35559540,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35559540,
+          16
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          8,
+          32,
+          35559540
+        ],
+        [
+          "suffix",
+          12,
+          32,
+          35559540
+        ],
+        [
+          "suffix",
+          16,
+          32,
+          35559540
+        ],
+        [
+          "suffix",
+          24,
+          16,
+          35559540
+        ],
+        [
+          "suffix",
+          32,
+          16,
+          35559540
+        ],
+        [
+          "suffix",
+          64,
+          32,
+          35559540
+        ],
+        [
+          "caller",
+          "ov093",
+          35449634,
+          35559540
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitTargetSelect",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35559656,
+      "spanish": 35559592,
+      "bytes": 48,
+      "candidates": [
+        35559592
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BChoiceMain_Task",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35564628,
+      "spanish": 35564564,
+      "bytes": 128,
+      "candidates": [
+        35564564
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpWin",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35564980,
+      "spanish": 35564916,
+      "bytes": 0,
+      "candidates": [
+        35564916,
+        35564932
+      ],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35564916,
+          10
+        ],
+        [
+          35564948,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov093",
+          35466206,
+          35564916
+        ],
+        [
+          "caller",
+          "ov170",
+          35566254,
+          35564948
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpStats",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35565012,
+      "spanish": 35564948,
+      "bytes": 128,
+      "candidates": [
+        35564948
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitCloseLevelUpWin",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35565044,
+      "spanish": 35564980,
+      "bytes": 128,
+      "candidates": [
+        35564980
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Rain_FadeIn",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35579792,
+      "spanish": 35579728,
+      "bytes": 128,
+      "candidates": [
+        35579728
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flake_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35579800,
+      "spanish": 35579736,
+      "bytes": 128,
+      "candidates": [
+        35579736
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Sandstorm_FadeIn",
+      "isa": "t",
+      "module": "ov027",
+      "english": 35579812,
+      "spanish": 35579748,
+      "bytes": 128,
+      "candidates": [
+        35579748
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flake_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35580040,
+      "spanish": 35579976,
+      "bytes": 128,
+      "candidates": [
+        35579976
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Rain_Main",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35580040,
+      "spanish": 35579976,
+      "bytes": 128,
+      "candidates": [
+        35579976
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Sandstorm_Main",
+      "isa": "t",
+      "module": "ov027",
+      "english": 35580040,
+      "spanish": 35579976,
+      "bytes": 128,
+      "candidates": [
+        35579976
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Rain_FadeOut",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35580132,
+      "spanish": 35580068,
+      "bytes": 128,
+      "candidates": [
+        35580068
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flake_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35580140,
+      "spanish": 35580076,
+      "bytes": 128,
+      "candidates": [
+        35580076
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Sandstorm_FadeOut",
+      "isa": "t",
+      "module": "ov027",
+      "english": 35580168,
+      "spanish": 35580104,
+      "bytes": 128,
+      "candidates": [
+        35580104
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Thunder_FadeIn",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35580740,
+      "spanish": 35580676,
+      "bytes": 128,
+      "candidates": [
+        35580676
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Blizzard_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35580788,
+      "spanish": 35580724,
+      "bytes": 128,
+      "candidates": [
+        35580724
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Blizzard_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35581028,
+      "spanish": 35580964,
+      "bytes": 128,
+      "candidates": [
+        35580964
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Thunder_Main",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35581144,
+      "spanish": 35581080,
+      "bytes": 128,
+      "candidates": [
+        35581080
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Blizzard_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35581164,
+      "spanish": 35581100,
+      "bytes": 128,
+      "candidates": [
+        35581100
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Thunder_FadeOut",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35581252,
+      "spanish": 35581188,
+      "bytes": 128,
+      "candidates": [
+        35581188
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GustyRain_FadeIn",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35581864,
+      "spanish": 35581800,
+      "bytes": 128,
+      "candidates": [
+        35581800
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flutter_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35581936,
+      "spanish": 35581872,
+      "bytes": 128,
+      "candidates": [
+        35581872
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flutter_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35582160,
+      "spanish": 35582096,
+      "bytes": 128,
+      "candidates": [
+        35582096
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GustyRain_Main",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35582212,
+      "spanish": 35582148,
+      "bytes": 128,
+      "candidates": [
+        35582148
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flutter_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35582252,
+      "spanish": 35582188,
+      "bytes": 128,
+      "candidates": [
+        35582188
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GustyRain_FadeOut",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35582336,
+      "spanish": 35582272,
+      "bytes": 128,
+      "candidates": [
+        35582272
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Speck_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35582980,
+      "spanish": 35582916,
+      "bytes": 128,
+      "candidates": [
+        35582916
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Speck_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35583204,
+      "spanish": 35583140,
+      "bytes": 128,
+      "candidates": [
+        35583140
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Speck_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35583288,
+      "spanish": 35583224,
+      "bytes": 128,
+      "candidates": [
+        35583224
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "NameEntry_ProcMain",
+      "isa": "t",
+      "module": "ov194",
+      "english": 35592004,
+      "spanish": 35591972,
+      "bytes": 128,
+      "candidates": [
+        35591972
+      ],
+      "base_delta": -32
+    },
+    {
+      "name": "BTLV_INPUT_ProcessTouchInput",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35663300,
+      "spanish": 35663236,
+      "bytes": 128,
+      "candidates": [
+        35663236
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvInput_YesNoTask",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35667264,
+      "spanish": 35667200,
+      "bytes": 128,
+      "candidates": [
+        35667200
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ShinkaDemo_Main",
+      "isa": "t",
+      "module": "ov195",
+      "english": 35668192,
+      "spanish": 35668128,
+      "bytes": 128,
+      "candidates": [
+        35668128
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvBGauge_Create",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35687852,
+      "spanish": 35687788,
+      "bytes": 128,
+      "candidates": [
+        35687788
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvBGauge_Delete",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35688552,
+      "spanish": 35688488,
+      "bytes": 128,
+      "candidates": [
+        35688488
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvBGauge_SlideTask",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35688628,
+      "spanish": 35688564,
+      "bytes": 128,
+      "candidates": [
+        35688564
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ZUKAN_TOROKU_GRAPHIC_Main",
+      "isa": "t",
+      "module": "ov207",
+      "english": 35696804,
+      "spanish": 35696740,
+      "bytes": 128,
+      "candidates": [
+        35696740
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BBagMain_Task",
+      "isa": "t",
+      "module": "ov197",
+      "english": 35703060,
+      "spanish": 35702996,
+      "bytes": 128,
+      "candidates": [
+        35702996
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BPlistMain_Task",
+      "isa": "t",
+      "module": "ov198",
+      "english": 35714168,
+      "spanish": 35714104,
+      "bytes": 96,
+      "candidates": [
+        35714104
+      ],
+      "base_delta": -64
+    }
+  ],
+  "IRAS": [
+    {
+      "name": "GFLAppInit",
+      "isa": "t",
+      "module": "main",
+      "english": 33576028,
+      "spanish": 33576028,
+      "bytes": 128,
+      "candidates": [
+        33576028
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "ConfirmDialog_Update",
+      "isa": "t",
+      "module": "main",
+      "english": 33685208,
+      "spanish": 33685160,
+      "bytes": 128,
+      "candidates": [
+        33685160
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "CARD_WaitBackupAsync",
+      "isa": "a",
+      "module": "main",
+      "english": 34040728,
+      "spanish": 34040680,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": 0,
+      "proposals": [
+        [
+          34040680,
+          3
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          24,
+          32,
+          34040680
+        ],
+        [
+          "suffix",
+          32,
+          16,
+          34040680
+        ],
+        [
+          "suffix",
+          64,
+          64,
+          34040680
+        ]
+      ],
+      "arm_call_proof": [
+        {
+          "module": "main",
+          "isa": "a",
+          "english_call": 33764980,
+          "spanish_call": 33764932,
+          "spanish_target": 34040680
+        }
+      ]
+    },
+    {
+      "name": "EventFieldMenu_Callback",
+      "isa": "t",
+      "module": "ov010",
+      "english": 34995500,
+      "spanish": 34995388,
+      "bytes": 128,
+      "candidates": [
+        34995388
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "REPORT_EVENT_Main",
+      "isa": "t",
+      "module": "ov010",
+      "english": 35035864,
+      "spanish": 35035752,
+      "bytes": 128,
+      "candidates": [
+        35035752
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "TRCARD_SYS_StateWaitEditProc",
+      "isa": "t",
+      "module": "ov010",
+      "english": 35058492,
+      "spanish": 35058380,
+      "bytes": 128,
+      "candidates": [
+        35058380
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "TRCARD_SYS_StateWaitBadgeProc",
+      "isa": "t",
+      "module": "ov010",
+      "english": 35058640,
+      "spanish": 35058528,
+      "bytes": 64,
+      "candidates": [
+        35058528
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "FieldmapProc_Update",
+      "isa": "t",
+      "module": "ov021",
+      "english": 35160048,
+      "spanish": 35159952,
+      "bytes": 128,
+      "candidates": [
+        35159952
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "SetupLoadZoneMapTypeData",
+      "isa": "t",
+      "module": "ov021",
+      "english": 35167056,
+      "spanish": 35166960,
+      "bytes": 96,
+      "candidates": [
+        35166960
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GetFieldmapZoneHeapSize",
+      "isa": "t",
+      "module": "ov021",
+      "english": 35167196,
+      "spanish": 35167100,
+      "bytes": 0,
+      "candidates": [
+        35167080,
+        35167100
+      ],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35167100,
+          4
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          24,
+          64,
+          35167100
+        ],
+        [
+          "suffix",
+          32,
+          64,
+          35167100
+        ],
+        [
+          "suffix",
+          48,
+          64,
+          35167100
+        ],
+        [
+          "suffix",
+          64,
+          64,
+          35167100
+        ]
+      ]
+    },
+    {
+      "name": "BtlMain_ProcMain",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35349588,
+      "spanish": 35349492,
+      "bytes": 128,
+      "candidates": [
+        35349492
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "PokeListProc_Main",
+      "isa": "t",
+      "module": "ov091",
+      "english": 35349976,
+      "spanish": 35349880,
+      "bytes": 128,
+      "candidates": [
+        35349880
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneSingle",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35351244,
+      "spanish": 35351148,
+      "bytes": 128,
+      "candidates": [
+        35351148
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneDouble",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35351676,
+      "spanish": 35351580,
+      "bytes": 128,
+      "candidates": [
+        35351580
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneTriple",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35352688,
+      "spanish": 35352592,
+      "bytes": 128,
+      "candidates": [
+        35352592
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneRotation",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35353076,
+      "spanish": 35352980,
+      "bytes": 128,
+      "candidates": [
+        35352980
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ItemMenuProc_Main",
+      "isa": "t",
+      "module": "ov070",
+      "english": 35359012,
+      "spanish": 35358904,
+      "bytes": 128,
+      "candidates": [
+        35358904
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ConfigPanel_Main",
+      "isa": "t",
+      "module": "ov068",
+      "english": 35362860,
+      "spanish": 35362764,
+      "bytes": 128,
+      "candidates": [
+        35362764
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "TownMap_ProcMain",
+      "isa": "t",
+      "module": "ov072",
+      "english": 35363096,
+      "spanish": 35363000,
+      "bytes": 64,
+      "candidates": [
+        35363000
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "StartMenu_Main",
+      "isa": "t",
+      "module": "ov088",
+      "english": 35364864,
+      "spanish": 35364768,
+      "bytes": 128,
+      "candidates": [
+        35364768
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "StartMenu_Continue",
+      "isa": "t",
+      "module": "ov088",
+      "english": 35366236,
+      "spanish": 35366140,
+      "bytes": 128,
+      "candidates": [
+        35366140
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ZukanDetail_Main",
+      "isa": "t",
+      "module": "ov208",
+      "english": 35376084,
+      "spanish": 35375988,
+      "bytes": 128,
+      "candidates": [
+        35375988
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ZknListSeq_Main",
+      "isa": "t",
+      "module": "ov209",
+      "english": 35376248,
+      "spanish": 35376152,
+      "bytes": 128,
+      "candidates": [
+        35376152
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "IntroProc_Main",
+      "isa": "t",
+      "module": "ov204",
+      "english": 35380080,
+      "spanish": 35379984,
+      "bytes": 128,
+      "candidates": [
+        35379984
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "TrainerCard_Main",
+      "isa": "t",
+      "module": "ov111",
+      "english": 35405684,
+      "spanish": 35405556,
+      "bytes": 128,
+      "candidates": [
+        35405556
+      ],
+      "base_delta": -128
+    },
+    {
+      "name": "PStatus_ProcMain",
+      "isa": "t",
+      "module": "ov131",
+      "english": 35481052,
+      "spanish": 35480956,
+      "bytes": 64,
+      "candidates": [
+        35480956
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Box2Proc_Main",
+      "isa": "t",
+      "module": "ov170",
+      "english": 35506464,
+      "spanish": 35506400,
+      "bytes": 96,
+      "candidates": [
+        35506400
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitCommandSelect",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35559364,
+      "spanish": 35559268,
+      "bytes": 64,
+      "candidates": [
+        35559268
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitMoveSelect",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35559636,
+      "spanish": 35559540,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35559540,
+          16
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          8,
+          32,
+          35559540
+        ],
+        [
+          "suffix",
+          12,
+          32,
+          35559540
+        ],
+        [
+          "suffix",
+          16,
+          32,
+          35559540
+        ],
+        [
+          "suffix",
+          24,
+          16,
+          35559540
+        ],
+        [
+          "suffix",
+          32,
+          16,
+          35559540
+        ],
+        [
+          "suffix",
+          64,
+          32,
+          35559540
+        ],
+        [
+          "caller",
+          "ov093",
+          35449666,
+          35559540
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitTargetSelect",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35559688,
+      "spanish": 35559592,
+      "bytes": 48,
+      "candidates": [
+        35559592
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BChoiceMain_Task",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35564660,
+      "spanish": 35564564,
+      "bytes": 128,
+      "candidates": [
+        35564564
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpWin",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35565012,
+      "spanish": 35564916,
+      "bytes": 0,
+      "candidates": [
+        35564916,
+        35564932
+      ],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35564916,
+          10
+        ],
+        [
+          35564948,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov093",
+          35466238,
+          35564916
+        ],
+        [
+          "caller",
+          "ov170",
+          35566286,
+          35564948
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpStats",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35565044,
+      "spanish": 35564948,
+      "bytes": 128,
+      "candidates": [
+        35564948
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitCloseLevelUpWin",
+      "isa": "t",
+      "module": "ov093",
+      "english": 35565076,
+      "spanish": 35564980,
+      "bytes": 128,
+      "candidates": [
+        35564980
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Rain_FadeIn",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35579824,
+      "spanish": 35579728,
+      "bytes": 128,
+      "candidates": [
+        35579728
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flake_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35579832,
+      "spanish": 35579736,
+      "bytes": 128,
+      "candidates": [
+        35579736
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Sandstorm_FadeIn",
+      "isa": "t",
+      "module": "ov027",
+      "english": 35579844,
+      "spanish": 35579748,
+      "bytes": 128,
+      "candidates": [
+        35579748
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flake_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35580072,
+      "spanish": 35579976,
+      "bytes": 128,
+      "candidates": [
+        35579976
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Rain_Main",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35580072,
+      "spanish": 35579976,
+      "bytes": 128,
+      "candidates": [
+        35579976
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Sandstorm_Main",
+      "isa": "t",
+      "module": "ov027",
+      "english": 35580072,
+      "spanish": 35579976,
+      "bytes": 128,
+      "candidates": [
+        35579976
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Rain_FadeOut",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35580164,
+      "spanish": 35580068,
+      "bytes": 128,
+      "candidates": [
+        35580068
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flake_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35580172,
+      "spanish": 35580076,
+      "bytes": 128,
+      "candidates": [
+        35580076
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Sandstorm_FadeOut",
+      "isa": "t",
+      "module": "ov027",
+      "english": 35580200,
+      "spanish": 35580104,
+      "bytes": 128,
+      "candidates": [
+        35580104
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Thunder_FadeIn",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35580772,
+      "spanish": 35580676,
+      "bytes": 128,
+      "candidates": [
+        35580676
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Blizzard_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35580820,
+      "spanish": 35580724,
+      "bytes": 128,
+      "candidates": [
+        35580724
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Blizzard_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35581060,
+      "spanish": 35580964,
+      "bytes": 128,
+      "candidates": [
+        35580964
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Thunder_Main",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35581176,
+      "spanish": 35581080,
+      "bytes": 128,
+      "candidates": [
+        35581080
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Blizzard_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35581196,
+      "spanish": 35581100,
+      "bytes": 128,
+      "candidates": [
+        35581100
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Thunder_FadeOut",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35581284,
+      "spanish": 35581188,
+      "bytes": 128,
+      "candidates": [
+        35581188
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GustyRain_FadeIn",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35581896,
+      "spanish": 35581800,
+      "bytes": 128,
+      "candidates": [
+        35581800
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flutter_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35581968,
+      "spanish": 35581872,
+      "bytes": 128,
+      "candidates": [
+        35581872
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flutter_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35582192,
+      "spanish": 35582096,
+      "bytes": 128,
+      "candidates": [
+        35582096
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GustyRain_Main",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35582244,
+      "spanish": 35582148,
+      "bytes": 128,
+      "candidates": [
+        35582148
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flutter_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35582284,
+      "spanish": 35582188,
+      "bytes": 128,
+      "candidates": [
+        35582188
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GustyRain_FadeOut",
+      "isa": "t",
+      "module": "ov026",
+      "english": 35582368,
+      "spanish": 35582272,
+      "bytes": 128,
+      "candidates": [
+        35582272
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Speck_FadeIn",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35583012,
+      "spanish": 35582916,
+      "bytes": 128,
+      "candidates": [
+        35582916
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Speck_Main",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35583236,
+      "spanish": 35583140,
+      "bytes": 128,
+      "candidates": [
+        35583140
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Speck_FadeOut",
+      "isa": "t",
+      "module": "ov025",
+      "english": 35583320,
+      "spanish": 35583224,
+      "bytes": 128,
+      "candidates": [
+        35583224
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "NameEntry_ProcMain",
+      "isa": "t",
+      "module": "ov194",
+      "english": 35592036,
+      "spanish": 35591972,
+      "bytes": 128,
+      "candidates": [
+        35591972
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BTLV_INPUT_ProcessTouchInput",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35663332,
+      "spanish": 35663236,
+      "bytes": 128,
+      "candidates": [
+        35663236
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvInput_YesNoTask",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35667296,
+      "spanish": 35667200,
+      "bytes": 128,
+      "candidates": [
+        35667200
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ShinkaDemo_Main",
+      "isa": "t",
+      "module": "ov195",
+      "english": 35668224,
+      "spanish": 35668128,
+      "bytes": 128,
+      "candidates": [
+        35668128
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvBGauge_Create",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35687884,
+      "spanish": 35687788,
+      "bytes": 128,
+      "candidates": [
+        35687788
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvBGauge_Delete",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35688584,
+      "spanish": 35688488,
+      "bytes": 128,
+      "candidates": [
+        35688488
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvBGauge_SlideTask",
+      "isa": "t",
+      "module": "ov094",
+      "english": 35688660,
+      "spanish": 35688564,
+      "bytes": 128,
+      "candidates": [
+        35688564
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ZUKAN_TOROKU_GRAPHIC_Main",
+      "isa": "t",
+      "module": "ov207",
+      "english": 35696836,
+      "spanish": 35696740,
+      "bytes": 128,
+      "candidates": [
+        35696740
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BBagMain_Task",
+      "isa": "t",
+      "module": "ov197",
+      "english": 35703092,
+      "spanish": 35702996,
+      "bytes": 128,
+      "candidates": [
+        35702996
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BPlistMain_Task",
+      "isa": "t",
+      "module": "ov198",
+      "english": 35714200,
+      "spanish": 35714104,
+      "bytes": 96,
+      "candidates": [
+        35714104
+      ],
+      "base_delta": -96
+    }
+  ],
+  "IRES": [
+    {
+      "name": "GFLAppInit",
+      "isa": "t",
+      "module": "main",
+      "english": 33576120,
+      "spanish": 33576120,
+      "bytes": 128,
+      "candidates": [
+        33576120
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "ConfirmDialog_Update",
+      "isa": "t",
+      "module": "main",
+      "english": 33707572,
+      "spanish": 33707524,
+      "bytes": 128,
+      "candidates": [
+        33707524
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "CARD_WaitBackupAsync",
+      "isa": "t",
+      "module": "main",
+      "english": 34011272,
+      "spanish": 34011224,
+      "bytes": 32,
+      "candidates": [
+        34011224
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "EventFieldMenu_Callback",
+      "isa": "t",
+      "module": "ov012",
+      "english": 34973812,
+      "spanish": 34973732,
+      "bytes": 128,
+      "candidates": [
+        34973732
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "EventSave_Callback",
+      "isa": "t",
+      "module": "ov012",
+      "english": 34981192,
+      "spanish": 34981112,
+      "bytes": 64,
+      "candidates": [
+        34981112
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "FieldmapProc_Update",
+      "isa": "t",
+      "module": "ov036",
+      "english": 35124948,
+      "spanish": 35124884,
+      "bytes": 128,
+      "candidates": [
+        35124884
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "SetupLoadZoneMapTypeData",
+      "isa": "t",
+      "module": "ov036",
+      "english": 35132476,
+      "spanish": 35132412,
+      "bytes": 96,
+      "candidates": [
+        35132412
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GetFieldmapZoneHeapSize",
+      "isa": "t",
+      "module": "ov036",
+      "english": 35132616,
+      "spanish": 35132552,
+      "bytes": 0,
+      "candidates": [
+        35132532,
+        35132552
+      ],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35132552,
+          4
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          24,
+          64,
+          35132552
+        ],
+        [
+          "suffix",
+          32,
+          64,
+          35132552
+        ],
+        [
+          "suffix",
+          48,
+          64,
+          35132552
+        ],
+        [
+          "suffix",
+          64,
+          64,
+          35132552
+        ]
+      ]
+    },
+    {
+      "name": "PokeListProc_Main",
+      "isa": "t",
+      "module": "ov165",
+      "english": 35232564,
+      "spanish": 35232500,
+      "bytes": 128,
+      "candidates": [
+        35232500
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_ProcMain",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35232776,
+      "spanish": 35232712,
+      "bytes": 128,
+      "candidates": [
+        35232712
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneSingle",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35234456,
+      "spanish": 35234392,
+      "bytes": 128,
+      "candidates": [
+        35234392
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneDouble",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35234888,
+      "spanish": 35234824,
+      "bytes": 128,
+      "candidates": [
+        35234824
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneTriple",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35235912,
+      "spanish": 35235848,
+      "bytes": 128,
+      "candidates": [
+        35235848
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlMain_SetupAloneRotation",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35236300,
+      "spanish": 35236236,
+      "bytes": 128,
+      "candidates": [
+        35236236
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ItemMenuProc_Main",
+      "isa": "t",
+      "module": "ov142",
+      "english": 35243700,
+      "spanish": 35243628,
+      "bytes": 128,
+      "candidates": [
+        35243628
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ConfigPanel_Main",
+      "isa": "t",
+      "module": "ov140",
+      "english": 35246316,
+      "spanish": 35246252,
+      "bytes": 128,
+      "candidates": [
+        35246252
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "TownMap_ProcMain",
+      "isa": "t",
+      "module": "ov144",
+      "english": 35246564,
+      "spanish": 35246500,
+      "bytes": 64,
+      "candidates": [
+        35246500
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "StartMenu_Main",
+      "isa": "t",
+      "module": "ov162",
+      "english": 35248548,
+      "spanish": 35248484,
+      "bytes": 48,
+      "candidates": [
+        35248484
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "StartMenu_Continue",
+      "isa": "t",
+      "module": "ov162",
+      "english": 35250028,
+      "spanish": 35249964,
+      "bytes": 128,
+      "candidates": [
+        35249964
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ZukanDetail_Main",
+      "isa": "t",
+      "module": "ov298",
+      "english": 35259704,
+      "spanish": 35259640,
+      "bytes": 128,
+      "candidates": [
+        35259640
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ZknListSeq_Main",
+      "isa": "t",
+      "module": "ov299",
+      "english": 35259868,
+      "spanish": 35259804,
+      "bytes": 48,
+      "candidates": [
+        35259804
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "IntroProc_Main",
+      "isa": "t",
+      "module": "ov294",
+      "english": 35265552,
+      "spanish": 35265488,
+      "bytes": 128,
+      "candidates": [
+        35265488
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "TrainerCard_Main",
+      "isa": "t",
+      "module": "ov186",
+      "english": 35289188,
+      "spanish": 35289092,
+      "bytes": 128,
+      "candidates": [
+        35289092
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "PStatus_ProcMain",
+      "isa": "t",
+      "module": "ov207",
+      "english": 35345224,
+      "spanish": 35345160,
+      "bytes": 64,
+      "candidates": [
+        35345160
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Box2Proc_Main",
+      "isa": "t",
+      "module": "ov255",
+      "english": 35370900,
+      "spanish": 35370836,
+      "bytes": 96,
+      "candidates": [
+        35370836
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitCommandSelect",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35450928,
+      "spanish": 35450864,
+      "bytes": 128,
+      "candidates": [
+        35450864
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitMoveSelect",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35451200,
+      "spanish": 35451136,
+      "bytes": 128,
+      "candidates": [
+        35451136
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitTargetSelect",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35451252,
+      "spanish": 35451188,
+      "bytes": 128,
+      "candidates": [
+        35451188
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpWin",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35457416,
+      "spanish": 35457352,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35457352,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov167",
+          35356644,
+          35457352
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpStats",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35457448,
+      "spanish": 35457384,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35457384,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov167",
+          35356682,
+          35457384
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitCloseLevelUpWin",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35457480,
+      "spanish": 35457416,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -64,
+      "proposals": [
+        [
+          35457416,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov167",
+          35356720,
+          35457416
+        ]
+      ]
+    },
+    {
+      "name": "NameEntry_ProcMain",
+      "isa": "t",
+      "module": "ov280",
+      "english": 35494480,
+      "spanish": 35494416,
+      "bytes": 128,
+      "candidates": [
+        35494416
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "ShinkaDemo_Main",
+      "isa": "t",
+      "module": "ov284",
+      "english": 35533344,
+      "spanish": 35533280,
+      "bytes": 128,
+      "candidates": [
+        35533280
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Rain_FadeIn",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35557648,
+      "spanish": 35557584,
+      "bytes": 128,
+      "candidates": [
+        35557584
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flake_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35557656,
+      "spanish": 35557592,
+      "bytes": 128,
+      "candidates": [
+        35557592
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Sandstorm_FadeIn",
+      "isa": "t",
+      "module": "ov077",
+      "english": 35557668,
+      "spanish": 35557604,
+      "bytes": 128,
+      "candidates": [
+        35557604
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flake_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35557896,
+      "spanish": 35557832,
+      "bytes": 128,
+      "candidates": [
+        35557832
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Rain_Main",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35557896,
+      "spanish": 35557832,
+      "bytes": 128,
+      "candidates": [
+        35557832
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Sandstorm_Main",
+      "isa": "t",
+      "module": "ov077",
+      "english": 35557896,
+      "spanish": 35557832,
+      "bytes": 64,
+      "candidates": [
+        35557832
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Rain_FadeOut",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35557988,
+      "spanish": 35557924,
+      "bytes": 128,
+      "candidates": [
+        35557924
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flake_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35557996,
+      "spanish": 35557932,
+      "bytes": 128,
+      "candidates": [
+        35557932
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Sandstorm_FadeOut",
+      "isa": "t",
+      "module": "ov077",
+      "english": 35558024,
+      "spanish": 35557960,
+      "bytes": 128,
+      "candidates": [
+        35557960
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Thunder_FadeIn",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35558596,
+      "spanish": 35558532,
+      "bytes": 128,
+      "candidates": [
+        35558532
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Blizzard_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35558644,
+      "spanish": 35558580,
+      "bytes": 128,
+      "candidates": [
+        35558580
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Blizzard_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35558884,
+      "spanish": 35558820,
+      "bytes": 64,
+      "candidates": [
+        35558820
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Thunder_Main",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35559000,
+      "spanish": 35558936,
+      "bytes": 128,
+      "candidates": [
+        35558936
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Blizzard_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35559020,
+      "spanish": 35558956,
+      "bytes": 128,
+      "candidates": [
+        35558956
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Thunder_FadeOut",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35559108,
+      "spanish": 35559044,
+      "bytes": 128,
+      "candidates": [
+        35559044
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GustyRain_FadeIn",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35559720,
+      "spanish": 35559656,
+      "bytes": 128,
+      "candidates": [
+        35559656
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flutter_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35559792,
+      "spanish": 35559728,
+      "bytes": 128,
+      "candidates": [
+        35559728
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flutter_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35560016,
+      "spanish": 35559952,
+      "bytes": 128,
+      "candidates": [
+        35559952
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GustyRain_Main",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35560068,
+      "spanish": 35560004,
+      "bytes": 128,
+      "candidates": [
+        35560004
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Flutter_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35560108,
+      "spanish": 35560044,
+      "bytes": 128,
+      "candidates": [
+        35560044
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "GustyRain_FadeOut",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35560192,
+      "spanish": 35560128,
+      "bytes": 128,
+      "candidates": [
+        35560128
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Speck_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35560836,
+      "spanish": 35560772,
+      "bytes": 128,
+      "candidates": [
+        35560772
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Speck_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35561060,
+      "spanish": 35560996,
+      "bytes": 128,
+      "candidates": [
+        35560996
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "Speck_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35561144,
+      "spanish": 35561080,
+      "bytes": 128,
+      "candidates": [
+        35561080
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvInput_YesNoTask",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35570184,
+      "spanish": 35570120,
+      "bytes": 128,
+      "candidates": [
+        35570120
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvBGauge_Create",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35593348,
+      "spanish": 35593284,
+      "bytes": 128,
+      "candidates": [
+        35593284
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvBGauge_Delete",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35593524,
+      "spanish": 35593460,
+      "bytes": 128,
+      "candidates": [
+        35593460
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BtlvBGauge_SlideTask",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35594228,
+      "spanish": 35594164,
+      "bytes": 128,
+      "candidates": [
+        35594164
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BChoiceMain_Task",
+      "isa": "t",
+      "module": "ov289",
+      "english": 35603660,
+      "spanish": 35603596,
+      "bytes": 128,
+      "candidates": [
+        35603596
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BBagMain_Task",
+      "isa": "t",
+      "module": "ov286",
+      "english": 35609668,
+      "spanish": 35609604,
+      "bytes": 96,
+      "candidates": [
+        35609604
+      ],
+      "base_delta": -64
+    },
+    {
+      "name": "BPlistMain_Task",
+      "isa": "t",
+      "module": "ov287",
+      "english": 35620772,
+      "spanish": 35620708,
+      "bytes": 96,
+      "candidates": [
+        35620708
+      ],
+      "base_delta": -64
+    }
+  ],
+  "IRDS": [
+    {
+      "name": "GFLAppInit",
+      "isa": "t",
+      "module": "main",
+      "english": 33576120,
+      "spanish": 33576120,
+      "bytes": 128,
+      "candidates": [
+        33576120
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "ConfirmDialog_Update",
+      "isa": "t",
+      "module": "main",
+      "english": 33707616,
+      "spanish": 33707568,
+      "bytes": 128,
+      "candidates": [
+        33707568
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "CARD_WaitBackupAsync",
+      "isa": "t",
+      "module": "main",
+      "english": 34011316,
+      "spanish": 34011268,
+      "bytes": 32,
+      "candidates": [
+        34011268
+      ],
+      "base_delta": 0
+    },
+    {
+      "name": "EventFieldMenu_Callback",
+      "isa": "t",
+      "module": "ov012",
+      "english": 34973876,
+      "spanish": 34973764,
+      "bytes": 128,
+      "candidates": [
+        34973764
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "EventSave_Callback",
+      "isa": "t",
+      "module": "ov012",
+      "english": 34981256,
+      "spanish": 34981144,
+      "bytes": 64,
+      "candidates": [
+        34981144
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "FieldmapProc_Update",
+      "isa": "t",
+      "module": "ov036",
+      "english": 35125012,
+      "spanish": 35124916,
+      "bytes": 128,
+      "candidates": [
+        35124916
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "SetupLoadZoneMapTypeData",
+      "isa": "t",
+      "module": "ov036",
+      "english": 35132540,
+      "spanish": 35132444,
+      "bytes": 96,
+      "candidates": [
+        35132444
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GetFieldmapZoneHeapSize",
+      "isa": "t",
+      "module": "ov036",
+      "english": 35132680,
+      "spanish": 35132584,
+      "bytes": 0,
+      "candidates": [
+        35132564,
+        35132584
+      ],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35132584,
+          4
+        ]
+      ],
+      "evidence": [
+        [
+          "suffix",
+          24,
+          64,
+          35132584
+        ],
+        [
+          "suffix",
+          32,
+          64,
+          35132584
+        ],
+        [
+          "suffix",
+          48,
+          64,
+          35132584
+        ],
+        [
+          "suffix",
+          64,
+          64,
+          35132584
+        ]
+      ]
+    },
+    {
+      "name": "PokeListProc_Main",
+      "isa": "t",
+      "module": "ov165",
+      "english": 35232628,
+      "spanish": 35232532,
+      "bytes": 128,
+      "candidates": [
+        35232532
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_ProcMain",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35232840,
+      "spanish": 35232744,
+      "bytes": 128,
+      "candidates": [
+        35232744
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneSingle",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35234520,
+      "spanish": 35234424,
+      "bytes": 128,
+      "candidates": [
+        35234424
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneDouble",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35234952,
+      "spanish": 35234856,
+      "bytes": 128,
+      "candidates": [
+        35234856
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneTriple",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35235976,
+      "spanish": 35235880,
+      "bytes": 128,
+      "candidates": [
+        35235880
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlMain_SetupAloneRotation",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35236364,
+      "spanish": 35236268,
+      "bytes": 128,
+      "candidates": [
+        35236268
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ItemMenuProc_Main",
+      "isa": "t",
+      "module": "ov142",
+      "english": 35243764,
+      "spanish": 35243660,
+      "bytes": 128,
+      "candidates": [
+        35243660
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ConfigPanel_Main",
+      "isa": "t",
+      "module": "ov140",
+      "english": 35246380,
+      "spanish": 35246284,
+      "bytes": 128,
+      "candidates": [
+        35246284
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "TownMap_ProcMain",
+      "isa": "t",
+      "module": "ov144",
+      "english": 35246628,
+      "spanish": 35246532,
+      "bytes": 64,
+      "candidates": [
+        35246532
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "StartMenu_Main",
+      "isa": "t",
+      "module": "ov162",
+      "english": 35248612,
+      "spanish": 35248516,
+      "bytes": 48,
+      "candidates": [
+        35248516
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "StartMenu_Continue",
+      "isa": "t",
+      "module": "ov162",
+      "english": 35250092,
+      "spanish": 35249996,
+      "bytes": 128,
+      "candidates": [
+        35249996
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ZukanDetail_Main",
+      "isa": "t",
+      "module": "ov298",
+      "english": 35259768,
+      "spanish": 35259672,
+      "bytes": 128,
+      "candidates": [
+        35259672
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ZknListSeq_Main",
+      "isa": "t",
+      "module": "ov299",
+      "english": 35259932,
+      "spanish": 35259836,
+      "bytes": 48,
+      "candidates": [
+        35259836
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "IntroProc_Main",
+      "isa": "t",
+      "module": "ov294",
+      "english": 35265680,
+      "spanish": 35265584,
+      "bytes": 128,
+      "candidates": [
+        35265584
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "TrainerCard_Main",
+      "isa": "t",
+      "module": "ov186",
+      "english": 35289252,
+      "spanish": 35289124,
+      "bytes": 128,
+      "candidates": [
+        35289124
+      ],
+      "base_delta": -128
+    },
+    {
+      "name": "PStatus_ProcMain",
+      "isa": "t",
+      "module": "ov207",
+      "english": 35345288,
+      "spanish": 35345192,
+      "bytes": 64,
+      "candidates": [
+        35345192
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Box2Proc_Main",
+      "isa": "t",
+      "module": "ov255",
+      "english": 35370964,
+      "spanish": 35370868,
+      "bytes": 96,
+      "candidates": [
+        35370868
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitCommandSelect",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35450992,
+      "spanish": 35450896,
+      "bytes": 128,
+      "candidates": [
+        35450896
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitMoveSelect",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35451264,
+      "spanish": 35451168,
+      "bytes": 128,
+      "candidates": [
+        35451168
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitTargetSelect",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35451316,
+      "spanish": 35451220,
+      "bytes": 128,
+      "candidates": [
+        35451220
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpWin",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35457480,
+      "spanish": 35457384,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35457384,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov167",
+          35356708,
+          35457384
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitLevelUpStats",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35457512,
+      "spanish": 35457416,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35457416,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov167",
+          35356746,
+          35457416
+        ]
+      ]
+    },
+    {
+      "name": "BtlvCore_WaitCloseLevelUpWin",
+      "isa": "t",
+      "module": "ov167",
+      "english": 35457544,
+      "spanish": 35457448,
+      "bytes": 0,
+      "candidates": [],
+      "base_delta": -96,
+      "proposals": [
+        [
+          35457448,
+          10
+        ]
+      ],
+      "evidence": [
+        [
+          "caller",
+          "ov167",
+          35356784,
+          35457448
+        ]
+      ]
+    },
+    {
+      "name": "NameEntry_ProcMain",
+      "isa": "t",
+      "module": "ov280",
+      "english": 35494544,
+      "spanish": 35494448,
+      "bytes": 128,
+      "candidates": [
+        35494448
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "ShinkaDemo_Main",
+      "isa": "t",
+      "module": "ov284",
+      "english": 35533408,
+      "spanish": 35533312,
+      "bytes": 128,
+      "candidates": [
+        35533312
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Rain_FadeIn",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35557712,
+      "spanish": 35557616,
+      "bytes": 128,
+      "candidates": [
+        35557616
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flake_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35557720,
+      "spanish": 35557624,
+      "bytes": 128,
+      "candidates": [
+        35557624
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Sandstorm_FadeIn",
+      "isa": "t",
+      "module": "ov077",
+      "english": 35557732,
+      "spanish": 35557636,
+      "bytes": 128,
+      "candidates": [
+        35557636
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flake_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35557960,
+      "spanish": 35557864,
+      "bytes": 128,
+      "candidates": [
+        35557864
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Rain_Main",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35557960,
+      "spanish": 35557864,
+      "bytes": 128,
+      "candidates": [
+        35557864
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Sandstorm_Main",
+      "isa": "t",
+      "module": "ov077",
+      "english": 35557960,
+      "spanish": 35557864,
+      "bytes": 64,
+      "candidates": [
+        35557864
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Rain_FadeOut",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35558052,
+      "spanish": 35557956,
+      "bytes": 128,
+      "candidates": [
+        35557956
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flake_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35558060,
+      "spanish": 35557964,
+      "bytes": 128,
+      "candidates": [
+        35557964
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Sandstorm_FadeOut",
+      "isa": "t",
+      "module": "ov077",
+      "english": 35558088,
+      "spanish": 35557992,
+      "bytes": 128,
+      "candidates": [
+        35557992
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Thunder_FadeIn",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35558660,
+      "spanish": 35558564,
+      "bytes": 128,
+      "candidates": [
+        35558564
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Blizzard_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35558708,
+      "spanish": 35558612,
+      "bytes": 128,
+      "candidates": [
+        35558612
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Blizzard_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35558948,
+      "spanish": 35558852,
+      "bytes": 64,
+      "candidates": [
+        35558852
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Thunder_Main",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35559064,
+      "spanish": 35558968,
+      "bytes": 128,
+      "candidates": [
+        35558968
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Blizzard_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35559084,
+      "spanish": 35558988,
+      "bytes": 128,
+      "candidates": [
+        35558988
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Thunder_FadeOut",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35559172,
+      "spanish": 35559076,
+      "bytes": 128,
+      "candidates": [
+        35559076
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GustyRain_FadeIn",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35559784,
+      "spanish": 35559688,
+      "bytes": 128,
+      "candidates": [
+        35559688
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flutter_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35559856,
+      "spanish": 35559760,
+      "bytes": 128,
+      "candidates": [
+        35559760
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flutter_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35560080,
+      "spanish": 35559984,
+      "bytes": 128,
+      "candidates": [
+        35559984
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GustyRain_Main",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35560132,
+      "spanish": 35560036,
+      "bytes": 128,
+      "candidates": [
+        35560036
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Flutter_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35560172,
+      "spanish": 35560076,
+      "bytes": 128,
+      "candidates": [
+        35560076
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "GustyRain_FadeOut",
+      "isa": "t",
+      "module": "ov076",
+      "english": 35560256,
+      "spanish": 35560160,
+      "bytes": 128,
+      "candidates": [
+        35560160
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Speck_FadeIn",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35560900,
+      "spanish": 35560804,
+      "bytes": 128,
+      "candidates": [
+        35560804
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Speck_Main",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35561124,
+      "spanish": 35561028,
+      "bytes": 128,
+      "candidates": [
+        35561028
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "Speck_FadeOut",
+      "isa": "t",
+      "module": "ov075",
+      "english": 35561208,
+      "spanish": 35561112,
+      "bytes": 128,
+      "candidates": [
+        35561112
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvInput_YesNoTask",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35570248,
+      "spanish": 35570152,
+      "bytes": 128,
+      "candidates": [
+        35570152
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvBGauge_Create",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35593412,
+      "spanish": 35593316,
+      "bytes": 128,
+      "candidates": [
+        35593316
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvBGauge_Delete",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35593588,
+      "spanish": 35593492,
+      "bytes": 128,
+      "candidates": [
+        35593492
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BtlvBGauge_SlideTask",
+      "isa": "t",
+      "module": "ov168",
+      "english": 35594292,
+      "spanish": 35594196,
+      "bytes": 128,
+      "candidates": [
+        35594196
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BChoiceMain_Task",
+      "isa": "t",
+      "module": "ov289",
+      "english": 35603724,
+      "spanish": 35603628,
+      "bytes": 128,
+      "candidates": [
+        35603628
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BBagMain_Task",
+      "isa": "t",
+      "module": "ov286",
+      "english": 35609732,
+      "spanish": 35609636,
+      "bytes": 96,
+      "candidates": [
+        35609636
+      ],
+      "base_delta": -96
+    },
+    {
+      "name": "BPlistMain_Task",
+      "isa": "t",
+      "module": "ov287",
+      "english": 35620836,
+      "spanish": 35620740,
+      "bytes": 96,
+      "candidates": [
+        35620740
+      ],
+      "base_delta": -96
+    }
+  ]
+}

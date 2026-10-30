@@ -26,6 +26,7 @@
 # folder of your own with IREO.jpg, IRDO.jpg ... named as for the list's icons/ folder (optional).
 # The AppImage's icon: SSR_LINUX_ICON=your.jpg or .png (optional); it is made with appimagetool,
 # fetched once into build-pc-deps/, and zsyncmake (sudo apt install zsync) for its .zsync.
+# SSR_TABLES_DIR may point to tables_only.py output for ROM-free CI builds.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
@@ -51,11 +52,18 @@ case "$TARGET" in
     windows|linux|both) ;;
     *) fail "which? tools/pc/build_all.sh windows|linux|both your-soulsilver-us.nds" ;;
 esac
-[ -n "$ROM" ] || fail "give your SoulSilver ROM (US): tools/pc/build_all.sh $TARGET your-soulsilver-us.nds"
-[ -f "$ROM" ] || fail "no such file: $ROM"
-[ "$(dd if="$ROM" bs=1 skip=12 count=4 2>/dev/null)" = IPGE ] ||
-    fail "$ROM is not Pokemon SoulSilver (US, game code IPGE): the tables are made from it"
-ROM="$(cd "$(dirname "$ROM")" && pwd)/$(basename "$ROM")"
+TABLES="${SSR_TABLES_DIR:-}"
+if [ -n "$TABLES" ]; then
+    TABLES="$(cd "$TABLES" && pwd)"
+    [ -f "$TABLES/sources.cmake" ] || fail "no address tables in $TABLES"
+    ls "$TABLES"/rc_[0-9]*.cpp >/dev/null 2>&1 && fail "use tables_only.py output, not recompiled game code"
+else
+    [ -n "$ROM" ] || fail "give your SoulSilver ROM (US): tools/pc/build_all.sh $TARGET your-soulsilver-us.nds"
+    [ -f "$ROM" ] || fail "no such file: $ROM"
+    [ "$(dd if="$ROM" bs=1 skip=12 count=4 2>/dev/null)" = IPGE ] ||
+        fail "$ROM is not Pokemon SoulSilver (US, game code IPGE): the tables are made from it"
+    ROM="$(cd "$(dirname "$ROM")" && pwd)/$(basename "$ROM")"
+fi
 for tool in git cmake ninja python3 curl; do
     command -v "$tool" >/dev/null || fail "$tool is not installed (Ubuntu: sudo apt install git cmake ninja-build python3 curl)"
 done
@@ -82,12 +90,15 @@ fetch_symbols() { # dir url commit paths...
 }
 
 # SoulSilver and HeartGold's tables (addresses only), as for the Switch.
-if [ ! -f gen/sources.cmake ]; then
-    say "SoulSilver's tables, from $ROM"
-    python3 tools/recomp.py --rom "$ROM" --layout layouts/soulsilver-us.json melonDS/src gen
-    python3 tools/apps.py --layout layouts/soulsilver-us.json gen
+if [ -z "$TABLES" ]; then
+    if [ ! -f gen/sources.cmake ]; then
+        say "SoulSilver's tables, from $ROM"
+        python3 tools/recomp.py --rom "$ROM" --layout layouts/soulsilver-us.json melonDS/src gen
+        python3 tools/apps.py --layout layouts/soulsilver-us.json gen
+    fi
+    python3 tools/soulsilver/tables_only.py gen build-gen-tables
+    TABLES="$HERE/build-gen-tables"
 fi
-python3 tools/soulsilver/tables_only.py gen build-gen-tables
 
 # The function tables (made without a ROM: the program reads the few bytes they need from the
 # player's ROM), one per game, in data/funcs beside the program.
@@ -105,12 +116,17 @@ python3 tools/bw2/funcmap.py build-decomp-pokew2/config/w2_us/arm9 - "$DATA/func
 python3 tools/bw1/funcmap.py build-decomp-aletheia/layout/function_addrs.tsv - "$DATA/funcs/IRBO.txt"
 python3 tools/bw1/funcmap.py build-decomp-aletheia/layout/function_addrs.tsv - "$DATA/funcs/IRAO.txt" --white
 cp tools/platinum/CPUE.txt "$DATA/funcs/CPUE.txt"
+cp tools/platinum/CPUS.txt "$DATA/funcs/CPUS.txt"
+cp tools/regions/IRBS.txt "$DATA/funcs/IRBS.txt"
+cp tools/regions/IRAS.txt "$DATA/funcs/IRAS.txt"
+cp tools/regions/IRES.txt "$DATA/funcs/IRES.txt"
+cp tools/regions/IRDS.txt "$DATA/funcs/IRDS.txt"
 
 # The build: the JIT for every game, no libpng (screenshots are for tests), OpenGL for WORLD ON
 # GPU (WGL on Windows, EGL on Linux), and SSE rather than the building machine's AVX2
 # (SSR_PORTABLE_X86), so that it runs on any 64-bit PC.
 COMMON=(-G Ninja -DCMAKE_BUILD_TYPE=Release -DSSR_JIT=ON -DSSR_PC_ALL_GAMES=ON -DSSR_PNG=OFF -DSSR_GPU3D=ON
-        -DSSR_PORTABLE_X86=ON -DSSR_GENERATED_DIR="$HERE/build-gen-tables")
+        -DSSR_PORTABLE_X86=ON -DSSR_GENERATED_DIR="$TABLES")
 ART="${SSR_PC_ART:-}"
 [ -n "$ART" ] && { [ -d "$ART" ] || fail "SSR_PC_ART: no such folder: $ART"; ART="$(realpath "$ART")"; say "Pictures for the game list: $ART"; }
 COMMON+=(-DSSR_PC_ART="$ART")
@@ -132,7 +148,7 @@ stage() {
 check_contents() { # list of paths, one per line, relative to the download's top folder
     python3 -c "
 import re, sys
-ok = re.compile(r'^pokemon-ds-wide/(pokemon-ds-wide|Pokemon DS Launcher\.exe|SDL2\.dll|libSDL2-2\.0\.so\.0|LICENSE\.txt|LICENSE-SDL2\.txt|README\.txt|roms/|data/|data/funcs/|data/funcs/(IREO|IRDO|IRBO|IRAO|CPUE)\.txt)?$')
+ok = re.compile(r'^pokemon-ds-wide/(pokemon-ds-wide|Pokemon DS Launcher\.exe|SDL2\.dll|libSDL2-2\.0\.so\.0|LICENSE\.txt|LICENSE-SDL2\.txt|README\.txt|roms/|data/|data/funcs/|data/funcs/(IREO|IRDO|IRBO|IRAO|CPUE|CPUS|IRBS|IRAS|IRES|IRDS)\.txt)?$')
 bad = [l for l in sys.stdin.read().splitlines() if l and not ok.match(l)]
 if bad: sys.exit('unexpected files in the download: %s' % bad)
 "
@@ -264,7 +280,7 @@ ls -l build-pc-dist/*.zip build-pc-dist/*.tar.gz build-pc-dist/*.AppImage* 2>/de
 cat <<EOF
 
 Unpack the download anywhere, put your ROMs in its roms folder (any names: English Black, White,
-Black 2 and White 2; SoulSilver, HeartGold and Platinum US) and start Pokemon DS Launcher.exe
+Black 2 and White 2; Spanish variants listed in README; SoulSilver / HeartGold US; Platinum) and start Pokemon DS Launcher.exe
 (Linux: pokemon-ds-wide).
 The downloads hold only the program: nothing of the games.
 EOF

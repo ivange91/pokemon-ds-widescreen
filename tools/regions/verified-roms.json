@@ -1,0 +1,86 @@
+[
+  {
+    "code": "IRBO",
+    "revision": 0,
+    "size": 268435456,
+    "sha1": "91e3c6552c41e207e12e03954d8c508f14f89dac"
+  },
+  {
+    "code": "IREO",
+    "revision": 0,
+    "size": 536870912,
+    "sha1": "5da09a39424f1a76c52a3eebad9b5e8dcacb71ba"
+  },
+  {
+    "code": "IRAS",
+    "revision": 0,
+    "size": 268435456,
+    "sha1": "2e0eb8546fd022af29f132858661d0d538dd4d06"
+  },
+  {
+    "code": "IRDS",
+    "revision": 0,
+    "size": 536870912,
+    "sha1": "5b36eb77ede5b8f55df0fe4bd72311890a8bbb87"
+  },
+  {
+    "code": "IRBS",
+    "revision": 0,
+    "size": 268435456,
+    "sha1": "45cd0ef564b3eec276becfc7c28141fab5bd0a80"
+  },
+  {
+    "code": "IRES",
+    "revision": 0,
+    "size": 536870912,
+    "sha1": "1942ea58fb78f8d85e1a28db82dc0b846e0f4e0a"
+  },
+  {
+    "code": "IPKF",
+    "revision": 0,
+    "size": 134217728,
+    "sha1": "09fb5438647a28ef680234777c73ccc6cbe63cf4"
+  },
+  {
+    "code": "IPGS",
+    "revision": 0,
+    "size": 134217728,
+    "sha1": "83444fc68d710905b089d73a39a2a595c75c7c47"
+  },
+  {
+    "code": "IPKE",
+    "revision": 0,
+    "size": 134217728,
+    "sha1": "30793e274fb4c7ba070ae226edbdfe355504b1f5"
+  },
+  {
+    "code": "CPUS",
+    "revision": 0,
+    "size": 134217728,
+    "sha1": "d30289ddffc5a5f91cdf72dc26fb66c8e9f17c4e"
+  },
+  {
+    "code": "CPUE",
+    "revision": 0,
+    "size": 134217728,
+    "sha1": "c5072bf51a5ecc51ade99d3506c023f5bac3eeb3"
+  },
+  {
+    "code": "IPGE",
+    "revision": 0,
+    "size": 134217728,
+    "sha1": "0959fe9e64dc749382460f1ccf90996f5ef4088d"
+  },
+  {
+    "code": "IRAO",
+    "revision": 0,
+    "size": 268435456,
+    "sha1": "8c2a5ef094d914bc38a1dbc217e2952932b39cd4"
+  },
+  {
+    "code": "IRDO",
+    "revision": 0,
+    "size": 536870912,
+    "sha1": "eeba7e06370dee9c80a9695d92e216db4a7a5b3b"
+  }
+]
