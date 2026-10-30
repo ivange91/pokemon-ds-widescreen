@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # GitHub requires write access to read unpublished release assets.
+  contents: write
 
 jobs:
   package:
@@ -44,8 +45,12 @@ jobs:
           java-version: '17'
       - name: Android SDK
         if: matrix.platform == 'android'
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'build-tools;34.0.0 platforms;android-34 ndk;27.2.12479018'
+      - name: Android SDK path
+        if: matrix.platform == 'android'
         run: |
-          sdkmanager --install 'build-tools;34.0.0' 'platforms;android-34' 'ndk;27.2.12479018'
           echo "ANDROID_SDK=$ANDROID_HOME" >> "$GITHUB_ENV"
       - name: Address-only tables (no ROM or recompiled instructions)
         env:
